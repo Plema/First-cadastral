@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url('../fonts/PFBeauSansPro-Bold.eot');
+  src: url('../fonts/PFBeauSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+  // url('../fonts/PFBeauSansPro-Bold.woff2') format('woff2'),
+  url('../fonts/PFBeauSansPro-Bold.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url('../fonts/PFBeauSansPro-Regular.eot');
+  src: url('../fonts/PFBeauSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+  // url('../fonts/PFBeauSansPro-Regular.woff2') format('woff2'),
+  url('../fonts/PFBeauSansPro-Regular.woff') format('woff');
+  font-weight: 400;
+}
