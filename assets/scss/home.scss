@@ -1,5 +1,6 @@
 .top-banner{
   position: relative;
+  overflow-y: hidden;
   &:before{
     content: '';
     background: url('../img/banner-mob.png') no-repeat;
@@ -12,6 +13,7 @@
   }
   .content-banner{
     padding-top: 75px;
+    overflow-y: hidden;
     h1{
       margin: 0;
       font-size: 25px;
@@ -244,6 +246,84 @@
   }
 }
 
+.block-questions{
+  margin-bottom: 0;
+  .heading{
+    &:before{
+      content: '04';
+    }
+  }
+}
+
+.partners-contact{
+  padding-top: 35px;
+}
+
+.our-partners{
+  margin-bottom: 100px;
+  .container{
+    padding-right: 0;
+  }
+  .heading{
+    &:before{
+      content: '05';
+    }
+  }
+  p{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .slider-clients{
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 7px;
+      max-width: 90px;
+      width: 100%;
+      max-height: 45px;
+      line-height: 45px;
+      position: relative;
+      height: 45px;
+      img{
+        filter: grayscale(100%) opacity(70%) brightness(100%);
+        -webkit-filter: grayscale(100%) opacity(70%) brightness(100%);
+        object-fit: contain;
+        max-height: 100%;
+      }
+      &:hover{
+        img{
+          filter: none;
+        }
+      }
+    }
+  }
+  .slider-but{
+    display: none;
+  }
+}
+
+.our-office{
+  .heading{
+    &:before{
+      content: '06';
+    }
+  }
+  .d3button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    max-width: 300px;
+    margin-bottom: 75px;
+  }
+  .map-with-pop-up{
+    .map{
+      width: 100%;
+      height: 627px;
+    }
+  }
+}
 
 @media (min-width: 375px){
   .top-banner{
@@ -262,12 +342,74 @@
       }
     }
   }
+  
 }
 
 @media (min-width: 575px){
   .top-banner{
     &:before{
       max-height: 425px;
+    }
+  }
+}
+
+
+@media (min-width: 768px){
+  .our-partners{
+    .slider-clients{
+      max-width: 1030px;
+      width: 100%;
+      margin: 0 auto;
+      a{
+        height: 95px;
+        line-height: 95px;
+        max-height: 95px;
+        max-width: 120px;
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1024px){
+  .our-advantages{
+    .slider-advantages{
+      .one-advantage{
+        min-height: 250px;
+        &:nth-child(odd){
+          margin-bottom: 35px;
+        }
+      }
+      .swiper-pagination-adv{
+        display: none;
+      }
+    }
+  }
+  .our-partners{
+    .slider-clients{
+      a{
+        max-width: 150px;
+        margin: 0 20px;
+      }
+    }
+    .slider-but{
+      display: none;
+    }
+  }
+  .partners-contact{
+    position: relative;
+    &:before{
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 898px;
+      max-height: 910px;
+      background: url('../img/office-left.png') no-repeat 0% 0%;
+      background-size: contain;
+      position: absolute;
     }
   }
 }
@@ -319,6 +461,74 @@
       }
     }
   }
+  .all-adv{
+    position: relative;
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      background-size: contain;
+      margin: auto;
+      z-index: 0;
+    }
+    &:before{
+      left: 3%;
+      background: url('../img/element-adv.png') no-repeat;
+      background-size: contain;
+      width: 194px;
+      height: 432px;
+      bottom: 0;
+    }
+    &:after{
+      background: url('../img/element-right.png') no-repeat;
+      background-size: contain;
+      height: 100%;
+      right: 1%;
+      top: 0;
+      max-width: 579px;
+      width: 100%;
+    }
+  }
+  .our-partners{
+    .slider-clients{
+      a{
+        max-width: 178px;
+        margin: 0 31px;
+      }
+    }
+    .slider-with-arrow{
+      position: relative;
+      overflow-x: hidden;
+      cursor: pointer;
+      .slider-but{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        display: block;
+        z-index: 10;
+        &:hover{
+          i{
+            color: var(--blue-color);
+            transform: scale(1.2);
+          }
+        }
+        i{
+          font-size: 30px;
+          color: var(--black-text);
+        }
+      }
+      .prev-client{
+        left: 7px;
+        transform: rotate(180deg);
+        margin-top: 12px;
+      }
+      .next-client{
+        right: 0px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1400px) {
@@ -357,6 +567,7 @@
       }
     }
   }
+
 }
 
 @media (min-width: 1600px) {
@@ -373,6 +584,30 @@
           }
         }
       }
+    }
+  }
+  .our-partners{
+    .slider-with-arrow{
+      .prev-client{
+        left: 30px;
+      }
+      .next-client{
+        right: 30px;
+      }
+    }
+  }
+
+  .partners-contact{
+    &:after{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 20%;
+      background: url('../img/right-office.png') no-repeat 50% 50%;
+      background-size: contain;
+      width: 554px;
+      height: 430px;
+      z-index: 0;
     }
   }
 }

@@ -2,8 +2,12 @@ header{
   padding: 20px 0 0 0;
   width: 100%;
   position: absolute;
-  // background: #ffffff;
-  z-index: 50;
+  z-index: 500;
+}
+.fixed-header{
+  background: #fff;
+  position: fixed;
+  padding-bottom: 10px;
 }
 .logotip{
   max-width: 249px;
@@ -184,10 +188,12 @@ nav{
   ul{
     li{
       margin-bottom: 30px;
+      padding-bottom: 5px;
       a{
         font-size: var(--fz18);
         font-family: var(--font-baeu);
         position: relative;
+        font-weight: 700;
         &:before{
           content: '';
           position: absolute;

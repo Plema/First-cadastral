@@ -1,0 +1,85 @@
+.our-office{
+  .heading{
+    &:before{
+      content: '06';
+    }
+  }
+  .info-contacts{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .one-info{
+      margin-bottom: 30px;
+      margin-right: 20px;
+      max-width: 265px;
+      width: 100%;
+      .img-info{
+        height: 54px;
+        width: 86px;
+        border-bottom: 1px solid var(--black-text);
+        position: relative;
+        margin-bottom: 25px;
+        &:before{
+          width: 26px;
+          height: 3px;
+          background-color: var(--blue-color);
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+        }
+      }
+      p{
+        font-size: 18px;
+        span, a{
+          font-weight: 700;
+          display: block;
+        }
+        .inline{
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 425px){
+  .our-office{
+    .info-contacts{
+      justify-content: space-around;
+      .one-info{
+        margin: 0 5px 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px){
+  .our-office{
+    .info-contacts{
+      justify-content: flex-start;
+      .one-info{
+        margin: 0 0 30px;
+        &:not(:last-of-type){
+          margin-right: 80px;
+          max-width: 208px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px){
+  .our-office{
+    .info-contacts{
+      .one-info{
+        margin: 0 0 45px;
+        &:not(:last-of-type){
+          margin-right: 100px;
+        }
+      }
+    }
+  }
+}

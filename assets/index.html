@@ -8,9 +8,16 @@
   <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=cb997612-3f90-40be-b09c-d45a6a3f06a6&lang=ru_RU"
+  type="text/javascript">
+  </script>
   
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/slick.css" data-inprogress="">
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/part-contact.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/block-questions.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/home.min.css" data-inprogress="">
 
 </head>
@@ -83,51 +90,177 @@
     </div>
   </section>
 
-
-  <div class="container">
-    <section class="our-advantages">
-      <div class="heading">
-        <h2>Наши<span> преимущества</span></h2>
-      </div>
-      <div class="slider-advantages">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="one-advantage f-adv">
-              <img src="img/block3_icon1.png" alt="">
-              <div class="right-text">
-                <h5>7 лет на рынке кадастровых работ</h5>
-                <p>Наша компания и квалифицированный коллектив зарекомендовал себя как надежный партнер способный довести проект до результата</p>
+  <section class="all-adv">
+    <div class="container">
+      <div class="our-advantages">
+        <div class="heading">
+          <h2>Наши<span> преимущества</span></h2>
+        </div>
+        <div class="slider-advantages">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="one-advantage f-adv">
+                <img src="img/block3_icon1.png" alt="">
+                <div class="right-text">
+                  <h5>7 лет на рынке кадастровых работ</h5>
+                  <p>Наша компания и квалифицированный коллектив зарекомендовал себя как надежный партнер способный довести проект до результата</p>
+                </div>
+              </div>
+              <div class="one-advantage s-adv">
+                <img src="img/block3_icon3.png" alt="">
+                <div class="right-text">
+                  <h5>Оперативная подготовка коммерческого предложения на <a href="">странице расчета</a> стоимости услуг</h5>
+                  <p>Используя простые параметры для выбора параметров кадастровых работ Вы можете оперативно получить расчет их стоимости</p>
+                </div>
               </div>
             </div>
-            <div class="one-advantage s-adv">
-              <img src="img/block3_icon3.png" alt="">
-              <div class="right-text">
-                <h5>Оперативная подготовка коммерческого предложения на <a href="">странице расчета</a> стоимости услуг</h5>
-                <p>Используя простые параметры для выбора параметров кадастровых работ Вы можете оперативно получить расчет их стоимости</p>
+            <div class="swiper-slide">
+              <div class="one-advantage t-adv">
+                <img src="img/block3_icon2.png" alt="">
+                <div class="right-text">
+                  <h5>Опыт и практические знания путей реализации проекта и действующего законодательства</h5>
+                  <p>Более 1000 успешно реализованных проектов по межеванию земельных участков и технической инвентаризации</p>
+                </div>
+              </div>
+              <div class="one-advantage fr-adv">
+                <img src="img/block3_icon4.png" alt="">
+                <div class="right-text">
+                  <h5>Соблюдение сроков, оперативное информирование и бесплатные консультации в ходе реализации проекта</h5>
+                  <p>Мы фиксируем в договоре сроки и стоимость реализации этапов и соблюдаем их</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="one-advantage t-adv">
-              <img src="img/block3_icon2.png" alt="">
-              <div class="right-text">
-                <h5>Опыт и практические знания путей реализации проекта и действующего законодательства</h5>
-                <p>Более 1000 успешно реализованных проектов по межеванию земельных участков и технической инвентаризации</p>
-              </div>
+          <div class="swiper-pagination-adv"></div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <include src="assets/templates/block-questions.html"></include>
+
+  <div class="partners-contact">
+    <section class="our-partners">
+      <div class="container">
+        <div class="heading">
+          <h2>Наши <span>клиенты</span></h2>
+        </div>
+        <p>Мы выполняем комплексные кадастровые работы для:</p>
+        <div class="slider-with-arrow">
+          <div class="slider-clients">
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client3.png" alt="">
+              </a>
             </div>
-            <div class="one-advantage fr-adv">
-              <img src="img/block3_icon4.png" alt="">
-              <div class="right-text">
-                <h5>Соблюдение сроков, оперативное информирование и бесплатные консультации в ходе реализации проекта</h5>
-                <p>Мы фиксируем в договоре сроки и стоимость реализации этапов и соблюдаем их</p>
-              </div>
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client2.png" alt="">
+              </a>
             </div>
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client5.png" alt="">
+              </a>
+            </div>
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client4.png" alt="">
+              </a>
+            </div>
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client1.png" alt="">
+              </a>
+            </div>
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client2.png" alt="">
+              </a>
+            </div>
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client5.png" alt="">
+              </a>
+            </div>
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client4.png" alt="">
+              </a>
+            </div>
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client1.png" alt="">
+              </a>
+            </div>
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client2.png" alt="">
+              </a>
+            </div>
+            <div class="cl-slide">
+              <a href="">
+                <img src="img/client5.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="prev-client slider-but">
+            <i class="icon-icon-next2"></i>
+          </div>
+          <div class="next-client slider-but">
+            <i class="icon-icon-next2"></i>
           </div>
         </div>
-        <div class="swiper-pagination-adv"></div>  
       </div>
     </section>
-  </div>
+
+    <section class="our-office">
+      <div class="container">
+        <div class="heading">
+          <h2>Наш  <span>офис</span></h2>
+        </div>
+        <div class="info-contacts">
+          <div class="one-info">
+            <div class="img-info">
+              <img src="img/map_icon2.png" alt="">
+            </div>
+            <p>109316, г. Москва,<span>пр-кт Волгоградский д. 43 корп. 3, офис № 16</span></p>
+          </div>
+          <div class="one-info">
+            <div class="img-info">
+              <img src="img/phone_icon2.png" alt="">
+            </div>
+            <p>
+              <a href="tel:+7 495 970-00-01">+7 495 970-00-01</a>
+              <a href="tel:+7 495 970-00-01">т/ф: +7 (495) 332-34-16</a>
+              с понедельника по пятницу
+            </p>
+          </div>
+          <div class="one-info">
+            <div class="img-info">
+              <img src="img/mail_icon2.png" alt="">
+            </div>
+            <p>
+              <a href="mailto:'zaproskp@1k-k.ru'">zaproskp@1k-k.ru</a>
+              напишите нам, мы ответим или перезвоним
+            </p>
+          </div>
+          <div class="one-info">
+            <div class="img-info">
+              <img src="img/clock_icon.png" alt="">
+            </div>
+            <p><span class="inline">Мы работаем с пн по пт:  с 9:00 - до 18:00.</span>  Необходимо заранее предупредить о визите для заказа пропуска</p>
+          </div>
+        </div>
+        <div class="d3button">
+          <span>Получить консультацию</span>
+          <i class="icon-message-icon"></i>
+        </div>
+      </div>
+        <div class="map-with-pop-up">
+          <div class="map" id="map"></div>
+        </div>
+    </section>
 </main>
 
   <!-- Footer -->
@@ -136,6 +269,7 @@
   <!-- Скрипты -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/script.min.js"></script>
   <script src="js/home.min.js"></script>
 
