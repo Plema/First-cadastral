@@ -43,20 +43,21 @@ $(document).ready(function(){
 
 
 var myMap;
-
-// Дождёмся загрузки API и готовности DOM.
 ymaps.ready(init);
-
 function init () {
-    // Создание экземпляра карты и его привязка к контейнеру с
-    // заданным id ("map").
     myMap = new ymaps.Map('map', {
-        // При инициализации карты обязательно нужно указать
-        // её центр и коэффициент масштабирования.
-        center: [55.713989, 37.718659 ], // Москва
+        center: [55.713917, 37.721526], // Москва
         zoom: 15
     }, {
         searchControlProvider: 'yandex#search'
     });
-
+    myPlacemark = new ymaps.Placemark([55.713989 ,37.718659], {
+      balloonContent: 'пр-кт Волгоградский д. 43 корп. 3'
+    }, {
+        iconLayout: 'default#image',
+        // preset: 'islands#icon',
+        iconColor: '#FF3333'
+    }),
+    myMap.geoObjects
+        .add(myPlacemark);
 }

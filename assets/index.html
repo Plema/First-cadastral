@@ -259,6 +259,37 @@
       </div>
         <div class="map-with-pop-up">
           <div class="map" id="map"></div>
+          <div class="pop-up-map">
+            <h4>Получить <span>консультацию</span></h4>
+            <p>Мы свяжемся с вами сразу после прочтения вашей заявки</p>
+            <form action="">
+              <div class="two-part">
+                <div class="left-part">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" id="name" placeholder="Как к Вам обращаться?">
+                  <label for="mail">Адрес электронной почты</label>
+                  <input type="email" id="mail" placeholder="Введите email">
+                  <label for="phone">Адрес электронной почты</label>
+                  <input type="text" id="phone" placeholder="В формате +7 (123) 456-78-91" class="withput-margin">
+                </div>
+                <div class="right-part">
+                  <label for="texarea">Текст сообщения</label>
+                  <textarea name="texarea" id="texarea" placeholder="Напишите сообщение"></textarea>
+                  <span class="text-span">* - все поля формы обязательны к заполнению</span>
+                  <div class="button-with-arrow arrow-right">
+                    <span>
+                      <img src="img/arrow.png" alt="">
+                    </span>
+                    <button>Отправить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="block-checkbox">
+                <input type="checkbox" name="check" id="check" checked>
+                <label for="check">Согласен с <span>политикой конфиденциальности</span></label>
+              </div>
+            </form>
+          </div>
         </div>
     </section>
 </main>

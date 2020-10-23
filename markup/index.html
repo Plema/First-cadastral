@@ -363,12 +363,121 @@
       </div>
         <div class="map-with-pop-up">
           <div class="map" id="map"></div>
+          <div class="pop-up-map">
+            <h4>Получить <span>консультацию</span></h4>
+            <p>Мы свяжемся с вами сразу после прочтения вашей заявки</p>
+            <form action="">
+              <div class="two-part">
+                <div class="left-part">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" id="name" placeholder="Как к Вам обращаться?">
+                  <label for="mail">Адрес электронной почты</label>
+                  <input type="email" id="mail" placeholder="Введите email">
+                  <label for="phone">Адрес электронной почты</label>
+                  <input type="text" id="phone" placeholder="В формате +7 (123) 456-78-91" class="withput-margin">
+                </div>
+                <div class="right-part">
+                  <label for="texarea">Текст сообщения</label>
+                  <textarea name="texarea" id="texarea" placeholder="Напишите сообщение"></textarea>
+                  <span class="text-span">* - все поля формы обязательны к заполнению</span>
+                  <div class="button-with-arrow arrow-right">
+                    <span>
+                      <img src="img/arrow.png" alt="">
+                    </span>
+                    <button>Отправить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="block-checkbox">
+                <input type="checkbox" name="check" id="check" checked="">
+                <label for="check">Согласен с <span>политикой конфиденциальности</span></label>
+              </div>
+            </form>
+          </div>
         </div>
     </section>
 </div></main>
 
   <!-- Footer -->
-  <footer class="footer"></footer>
+  <footer class="footer">
+  <div class="container">
+    <div class="content-footer">
+      <div class="logotip">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="">
+        </a>
+        <h6>Мы знаем о кадастре все</h6>
+      </div>
+      <div class="all-right-part">
+        <div class="top-menu">
+          <div class="one-part location-part">
+            <div class="location-head with-pin">
+              <img src="img/map_icon.png" alt="">
+              <p>г. Москва, пр-т Волгоградский,
+                д. 43 корп. 3, офис № 16</p>
+            </div>
+          </div>
+          <div class="one-part email-phone-head">
+            <div class="email-head with-pin">
+              <img src="img/mail_icon.png" alt="">
+              <a href="mailto:'zaproskp@1k-k.ru'">zaproskp@1k-k.ru</a>
+            </div>
+            <div class="phone-head with-pin">
+              <img src="img/phone_icon.png" alt="">
+              <a href="tel:+7 495 970-00-01">+7 495 970-00-01</a>
+            </div>
+          </div>
+          <div class="button-search-head">
+            <div class="button-with-arrow">
+              <span>
+                <img src="img/arrow.png" alt="">
+              </span>
+              <button>Заказать звонок</button>
+            </div>
+            <div class="div-soc-search">
+              <div class="search-block">
+                <img src="img/search_icon.png" alt="">
+                <input type="text" placeholder="Поиск" id="search-input" readonly="">
+              </div>
+              <div class="social-head">
+                <div class="top-social">
+                  <i class="icon-social-network-all-icon"></i>
+                  <p>Мы в соцсетях</p>
+                </div>
+                <!-- добавлять класс open-social -->
+                <div class="hidden-social">
+                  <a href="#">
+                    <i class="icon-fb-icon"></i>
+                  </a>
+                  <a href="#">
+                    <i class="icon-vk-icon"></i>
+                  </a>
+                  <a href="#">
+                    <i class="icon-insta"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Кадастровые работы</a></li>
+            <li><a href="">Стоимость работ</a></li>
+            <li><a href="">Новости отрасли</a></li>
+            <li><a href="">Делимся опытом</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="bot-footer">
+      <p>© Использование материалов сайта 1k-k.ru разрешается только при ссылке на источник | 1997–2020</p>
+      <p>Разработано в <a href="">“Студия Племя”</a></p>
+    </div>
+  </div>
+</footer>
 
   <!-- Скрипты -->
   <script src="js/jquery-3.4.1.min.js"></script>

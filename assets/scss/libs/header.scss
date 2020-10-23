@@ -3,6 +3,9 @@ header{
   width: 100%;
   position: absolute;
   z-index: 500;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .fixed-header{
   background: #fff;
@@ -350,9 +353,10 @@ nav{
 @media (min-width: 1280px) {
   .logotip{
     margin-right: 0;
+    padding-bottom: 5px;
   }
   .all-right-part{
-    max-width: 925px;
+    max-width: 970px;
     width: 100%;
     padding-left: 15px;
   }
@@ -418,5 +422,14 @@ nav{
   .all-right-part{
     padding-left: 0;
     padding-right: 40px;
+  }
+  nav{
+    ul{
+      li{
+        a{
+          font-size: 18px;
+        }
+      }
+    }
   }
 }
