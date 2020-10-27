@@ -1,0 +1,25 @@
+.our-office{
+  .heading{
+    &:before{
+      content: '01';
+    }
+  }
+  .map-with-map{
+    margin-bottom: 50px;
+    .map-marshrut{
+      width: 545px;
+      height: 576px;
+      border: 10px solid #fff;
+    }
+  }
+  .two-photo{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+      margin: 0 10px 10px;
+    }
+  }
+}

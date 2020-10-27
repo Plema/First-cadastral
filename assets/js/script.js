@@ -21,6 +21,15 @@ $(document).ready(function(){
     });
   }
 
+  $( ".top-social" ).click(function(event) {
+    $('.hidden-social').toggleClass('open-social');
+  });
+
+  $( ".burg-menu" ).click(function(event) {
+    $('.burg-menu').toggleClass('open-burg-menu');
+    $('nav').toggleClass('open-nav');
+
+  });
 
 });
 

@@ -1,5 +1,6 @@
 @import "libs/variable";
 @import "libs/button";
+@import "libs/pop-up";
 @import "libs/header";
 @import "libs/footer";
 @import "libs/fonts";
@@ -59,9 +60,10 @@ ol li {
     margin: 0;
 }
 main{
-    padding-top: 365px;
+    // padding-top: 365px;
     max-width: 100%;
     overflow-x: hidden;
+    z-index: 1;
 }
 input[type="submit"] {
     -webkit-appearance: none;
@@ -114,6 +116,58 @@ p, a, li, span, h1, h2, h3, h4, h5, h6{
         position: relative;
         span{
             font-weight: 700;
+        }
+    }
+}
+.heading1{
+    &:before{
+        content: '01';
+    }
+}
+.heading2{
+    &:before{
+        content: '02';
+    }
+}
+.heading3{
+    &:before{
+        content: '03';
+    }
+}
+.heading4{
+    &:before{
+        content: '04';
+    }
+}
+.heading5{
+    &:before{
+        content: '05';
+    }
+}
+.crumbs{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    li{
+        position: relative;
+        padding-right: 10px;
+        a{
+            font-size: 14px;
+            color: var(--gray-color);
+        }
+        &:not(:last-of-type){
+            &:before{
+                content: '/';
+                position: absolute;
+                top: 2px;
+                bottom: 0;
+                right: 2px;
+                font-size: 14px;
+                color: var(--gray-color);
+            }
         }
     }
 }
@@ -185,7 +239,7 @@ h4 {}
         width: 864px;
     }
     main{
-        padding-top: 125px;
+        padding-top: 150px;
     }
 }
 

@@ -1,11 +1,8 @@
 header{
   padding: 20px 0 0 0;
   width: 100%;
-  position: absolute;
-  z-index: 500;
-  left: 0;
-  right: 0;
-  margin: auto;
+  // position: absolute;
+
 }
 .fixed-header{
   background: #fff;
@@ -150,6 +147,7 @@ header{
         align-items: center;
         justify-content: flex-end;
         margin-bottom: 40px;
+        cursor: pointer;
         p{
           margin-left: 8px;
           text-decoration: underline;
@@ -218,8 +216,15 @@ nav{
           }
         }
       }
+      .hidden-list{
+        display: none;
+      }
     }
   }
+}
+.open-nav{
+  transform: scale(1);
+  z-index: 500;
 }
 
 
@@ -318,10 +323,18 @@ nav{
 
 
 @media (min-width: 768px) {
+  header{
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
   .all-head{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 15px;
   }
   .logotip{
     max-width: 200px;
@@ -329,6 +342,11 @@ nav{
   }
   .top-menu{
     justify-content: space-between;
+  }
+  nav{
+    top: 130px;
+    right: 0;
+    left: auto;
   }
 }
 
@@ -351,6 +369,9 @@ nav{
 
 
 @media (min-width: 1280px) {
+  .all-head{
+    padding-bottom: 0;
+  }
   .logotip{
     margin-right: 0;
     padding-bottom: 5px;
