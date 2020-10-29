@@ -4,7 +4,6 @@ $(document).ready(function(){
   $( ".tabs-company > li" ).click(function(event) {
     var attr1 = $(this).data('tab');
     var text1 = $(this).text();
-    console.log(attr1)
 
     $('.fourth-crumb').css('display','none')
 
@@ -16,11 +15,17 @@ $(document).ready(function(){
 
     if( $('#review-tab').hasClass('active-tab') ){
       $('.fourth-crumb').css('display','block')
+
+    } else if($('#part-ord').hasClass('active-tab')){
+
+      $('.fourth-crumb').css('display','block')
+      var text3 = $('.partn-ac').text();
+      $('.fourth-crumb > a').html(text3)
     }
 
   });
 
-  
+  //Tab3 - review
   $( ".phis-ur-tab > p" ).click(function(event) {
     var attr2 = $(this).data('review');
     var text2 = $(this).text();
@@ -35,19 +40,36 @@ $(document).ready(function(){
 
   });
 
+  //Tab7 - partners
+  $( ".pertner-order-tab > p" ).click(function(event) {
+    var attr4 = $(this).data('partord');
+    var text4 = $(this).text();
+
+    $('.fourth-crumb > a').html(text4)
+
+    $(".pertner-order-tab > p").removeClass('activ-orp')
+    $(this).addClass('activ-orp');
+
+    $('.one-part-tab').removeClass('active-part');
+    $('.tab7').find('.' + attr4).addClass('active-part')
+
+  });
+
 
   
   $( ".open-text-review" ).click(function(event) {
-
     $(this).parent().parent().find('.hidden-text').addClass('show-hidden-text')
-
   });
   
   $( ".close-hidden-text" ).click(function(event) {
-
     $(this).parent().parent().removeClass('show-hidden-text')
-
   });
+  
+
+  // $( ".standart-img" ).click(function(event) {
+  //   $('.standart-img').removeClass('open-big-img')
+  //   $(this).parent().find('.big-img').addClass('open-big-img')
+  // });
 
   $('.all-history-slider').slick({
     dots: true,
