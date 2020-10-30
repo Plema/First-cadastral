@@ -36,6 +36,8 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 45px;
+  position: relative;
+  z-index: 2;
   p{
     max-width: 320px;
     width: 100%;
@@ -68,6 +70,8 @@
   padding-bottom: 20px;
   border-bottom: 1px solid  #908f91;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
   .data{
     font-size: 14px;
     color: #908f91;
@@ -94,9 +98,13 @@
   .pagination{
     margin-bottom: 40px;
     margin-top: 45px;
+    position: relative;
+    z-index: 2;
   }
 }
 .bottom-link{
+  position: relative;
+  z-index: 2;
   a{
     display: inline-flex;
     flex-wrap: nowrap;
@@ -135,6 +143,27 @@
     a{
       max-width: 100%;
       width: auto;
+    }
+  }
+  .all-news{
+    position: relative;
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      z-index: 0;
+      background: url('../img/company1.png') no-repeat;
+      width: 512px;
+      height: 432px;
+    }
+    &:before{
+      top: 2%;
+      right: 1%;
+    }
+    &:after{
+      bottom: 2%;
+      top: 2%;
+      margin: auto;
+      left: 1%;
     }
   }
 }

@@ -1,0 +1,89 @@
+main{
+  background: url('../img/bg-mob4.png') no-repeat 0% 0%;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .all-404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 60vh;
+    text-align: center;
+    height: 60vh;
+  }
+  h1{
+    text-shadow: 23px 23px 46px rgba(28, 102, 120, 0.2);
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 142px;
+    margin: 0;
+  }
+  h2{
+    font-weight: 600;
+    color: #231f20;
+    font-family: var(--font-baeu);
+    font-size: 24px;
+  }
+  p{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 18px;
+    font-weight: 700;
+    a{
+      color: var(--blue-color);
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main{
+    background: url('../img/bg-404d.jpg') no-repeat 50% 100%;
+    background-size: cover;
+    h1{
+      font-size: 200px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main{
+    h1{
+      font-size: 275px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  main{
+    .all-404{
+      height: 70vh;
+      max-height: 70vh;
+    }
+    h1{
+      font-size: 300px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  main{
+    h1{
+      font-size: 350px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  main{
+    h1{
+      font-size: 420px;
+    }
+  }
+}
