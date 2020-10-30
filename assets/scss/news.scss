@@ -1,0 +1,148 @@
+.search-block-news{
+  position: relative;
+  margin-bottom: 35px;
+  input{
+    width: 100%;
+    height: 50px;
+    padding: 20px 50px 20px 20px;
+    border-radius: 25px;
+    background-color: #f5f2f0;
+    font-weight: 600;
+    border: none;
+    &::placeholder{
+      font-weight: 600;
+      color: #908f91;
+    }
+  }
+  button{
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.tabs-news{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+  p{
+    max-width: 320px;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 25px;
+    background-color: #f5f2f0;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #231f20;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover{
+      color: var(--blue-color);
+    }
+  }
+  .active-tab-news{
+    background: var(--blue-color);
+    color: #ffffff;
+    &:hover{
+      color:  #ffffff;
+    }
+  }
+}
+.one-smallNew{
+  padding-bottom: 20px;
+  border-bottom: 1px solid  #908f91;
+  margin-bottom: 30px;
+  .data{
+    font-size: 14px;
+    color: #908f91;
+    display: block;
+    margin-bottom: 15px;
+  }
+  a{
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-flex;
+    margin-bottom: 20px;
+    &:hover{
+      color: var(--blue-color);
+    }
+  }
+  p{
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+.all-tabs-news{
+  padding-bottom: 50px;
+  border-bottom: 1px solid #231f20;
+  .pagination{
+    margin-bottom: 40px;
+    margin-top: 45px;
+  }
+}
+.bottom-link{
+  a{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    justify-content: flex-start;
+    max-width: 193px;
+    align-items: center;
+    span{
+      color: #908f91;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+    img{
+      margin-left: 10px;
+    }
+  }
+}
+.on-tabN{
+  transform: scale(0);
+  height: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.active-tabN{
+  transform: scale(1);
+  height: auto;
+}
+
+
+@media (min-width: 1024px) {
+  .search-block-news{
+    margin-bottom: 50px;
+  }
+  .bottom-link{
+    text-align: right;
+    a{
+      max-width: 100%;
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .tabs-news{
+    p{
+      width: 25%;
+    }
+  }
+}

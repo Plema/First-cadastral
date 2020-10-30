@@ -310,6 +310,62 @@ html, body {
   .loaded #cube-loader {
     display: none;
   }
+
+.pagination{
+    ul{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        .page, li{
+            width: 100%;
+            min-width: 20px;
+            max-width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin: 0 3px 10px;
+            a{
+                font-size: 14px;
+                font-weight: 700;
+                color: #908f91;
+            }
+        }
+        .active-page{
+            background: var(--blue-color);
+            a{
+                color: #ffffff;
+            }
+        }
+        .with-next{
+            width: 100%;
+        }
+        .next{
+            font-weight: 700;
+            font-size: 14px;
+            color: #908f91;
+            text-decoration: underline;
+            position: relative;
+            z-index: 2;
+            min-width: 100px;
+            i{
+                font-size: 10px;
+                color: #908f91;
+            }
+            &:hover{
+                color: var(--blue-color);
+                i{
+                color: var(--blue-color);
+                }
+            }
+        }
+    }
+}
+
+
 @media (min-width: 460px) {
     main{
         padding-top: 270px;
