@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -8,18 +9,16 @@
   <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=cb997612-3f90-40be-b09c-d45a6a3f06a6&lang=ru_RU" type="text/javascript">
-  </script>
-  
+  <link rel="stylesheet" href="css/slick.css" data-inprogress="">
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
-  <link rel="stylesheet" href="css/part-contact.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/block-questions.min.css" data-inprogress="">
-  <link rel="stylesheet" href="css/contact.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/cost-work.min.css" data-inprogress="">
+
 </head>
 
 <body>
   <!-- Header -->
-  <div id="cube-loader">
+<div id="cube-loader">
   <div class="caption">
     <div class="cube-loader">
       <div class="cube loader-1"></div>
@@ -30,7 +29,7 @@
   </div>
 </div>
 
-  <header class="header">
+<header class="header">
   <div class="container">
     <div class="all-head">
       <div class="logotip">
@@ -135,67 +134,156 @@
   </div>
 </header>
 
-   <!-- Основной контент -->
-<main class="main">
-
+<main>
   <div class="container">
     <ul class="crumbs">
       <li><a href="index.html">Главная</a></li>
-      <li><a href="contact.html">Контакты</a></li>
+      <li><a href="cost-of-work.html">Стоимость работ</a></li>
     </ul>
   </div>
 
-  <section class="our-office">
+  <div class="all-cost">
     <div class="container">
-      <div class="heading">
-        <h2>Наш  <span>офис</span></h2>
+      <div class="heading heading1">
+        <h2>Стоимость <span> работ</span></h2>
       </div>
-      <div class="info-contacts">
-        <div class="one-info">
-          <div class="img-info">
-            <img src="img/map_icon2.png" alt="">
-          </div>
-          <p>109316, г. Москва,<span>пр-кт Волгоградский д. 43 корп. 3, офис № 16</span></p>
-        </div>
-        <div class="one-info">
-          <div class="img-info">
-            <img src="img/phone_icon2.png" alt="">
-          </div>
-          <p>
-            <a href="tel:+7 495 970-00-01">+7 495 970-00-01</a>
-            <a href="tel:+7 495 970-00-01">т/ф: +7 (495) 332-34-16</a>
-            с понедельника по пятницу
-          </p>
-        </div>
-        <div class="one-info">
-          <div class="img-info">
-            <img src="img/mail_icon2.png" alt="">
-          </div>
-          <p>
-            <a href="mailto:'zaproskp@1k-k.ru'">zaproskp@1k-k.ru</a>
-            напишите нам, мы ответим или перезвоним
-          </p>
-        </div>
-        <div class="one-info">
-          <div class="img-info">
-            <img src="img/clock_icon.png" alt="">
-          </div>
-          <p><span class="inline">Мы работаем с пн по пт:  с 9:00 - до 18:00.</span>  Необходимо заранее предупредить о визите для заказа пропуска</p>
-        </div>
-      </div>
-      <div class="map-with-map">
-        <div class="big-map" id="all-map"></div>
-        <div class="map-marshrut" id="map-marshrut"></div>
-      </div>
+      <h3>Мы создали для Вас форму расчета стоимости межевания земельных участков, технического плана на сооружение, геодезических работ и выноса границ участка в натуру. Если у Вас останутся вопросы к полученным расчетам или Вы не найдете необходимого вида работ звонитие или оставьте Вашу заявку на расчет стоимости или консультацию любым удобным для Вас способом.</h3>
+      <form action="" class="top-form">
+        <div class="all-check">
+          <div class="left-part">
 
-      <div class="two-photo">
-        <img src="img/photo-c1.jpg" alt="">
-        <img src="img/photo-c2.jpg" alt="">
-      </div>
+            <div class="one-part">
+              <h5>Собственник объекта</h5>
+              <div class="one-radio">
+                <input type="radio" id="ur-l" name="face" checked="">
+                <label for="ur-l">Юридическое лицо</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="phis-l" name="face">
+                <label for="phis-l">Физическое лицо</label>
+              </div>
+            </div>
+
+            <div class="one-part">
+              <h5>Объект</h5>
+              <div class="one-radio">
+                <input type="radio" id="obj1" name="object" checked="">
+                <label for="obj1">Жилой дом</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="obj2" name="object">
+                <label for="obj2">Нежилое здание</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="obj3" name="object">
+                <label for="obj3">Сооружение</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="obj4" name="object">
+                <label for="obj4">Нежилое помещение</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="obj5" name="object">
+                <label for="obj5">Машино-место</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="obj6" name="object">
+                <label for="obj6">Многоквартирный дом</label>
+              </div>
+            </div>
+
+          </div>
+          <div class="right-part">
+            <div class="one-part">
+              <h5>Действие</h5>
+              <div class="one-radio">
+                <input type="radio" id="act1" name="action" checked="" class="act">
+                <label for="act1">Образовать часть для аренды</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="act2" name="action" class="act">
+                <label for="act2">Узаконить перепланировку</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="act3" name="action" class="act">
+                <label for="act3">Технический план для постановки на учет </label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="act4" name="action" class="act">
+                <label for="act4">Технический план для ввода в эксплуатацию</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="act5" name="action" class="act">
+                <label for="act5">Снять с кадастрового учета</label>
+              </div>
+            </div>
+
+            <div class="one-part special-block">
+              <h5>Необходимость проектной документации </h5>
+              <div class="one-radio">
+                <input type="radio" id="spec-bl1" name="spec1" checked="">
+                <label for="spec-bl1">Имеется проектная документация</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="spec-bl2" name="spec1">
+                <label for="spec-bl2">Нужно подготовить проектую документацию</label>
+              </div>
+            </div>
+
+            <div class="one-part">
+              <h5>Требуется подача документов?</h5>
+              <div class="one-radio">
+                <input type="radio" id="doc1" name="documents" checked="">
+                <label for="doc1">Имеется проектная документация</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="doc2" name="documents">
+                <label for="doc2">Нужно подготовить проектую документацию</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h5>Площадь (протяженность) объекта в м</h5>
+        <p>(при аренде - площадь передаваемая в аренду)</p>
+        <input type="number" placeholder="100" class="inp-text" value="100" required="">
+        <div class="button-with-arrow arrow-right">
+          <span>
+            <img src="img/arrow.png" alt="">
+          </span>
+          <button>Посчитать</button>
+        </div>
+      </form>
+
+      <form action="" class="form-email">
+        <h5>Отправить расчет на почту</h5>
+        <input type="email" placeholder="Введите email *" class="inp-text">
+        <div class="button-with-arrow arrow-right">
+          <span>
+            <img src="img/arrow.png" alt="">
+          </span>
+          <button>Отправить расчет на почту</button>
+        </div>
+      </form>
+
     </div>
-  </section>
 
-
+    <div class="result-price">
+        <div>
+          <p class="left">Примерная стоимость выбранных работ</p>
+          <p class="right">105 500 руб.</p>
+        </div>
+        <div>
+          <span class="left">Размер государственной пошлины при регистрации</span>
+          <span class="right">22 000 руб.</span>
+        </div>
+        <div>
+          <strong class="left">Примерная стоимость включая госпошлину</strong>
+          <strong class="right">127 500 руб.</strong>
+        </div>
+    </div>
+  </div>
+    
   <div class="block-questions">
   <div class="container">
     <div class="heading">
@@ -227,7 +315,6 @@
 
 </main>
 
-<!-- Footer -->
 <footer class="footer">
   <div class="container">
     <div class="content-footer">
@@ -307,11 +394,18 @@
     </div>
   </div>
 </footer>
+<div class="back-dark"></div>
+
+<div class="pop-up politic-pop">
+  <div class="content-pop">
+
+  </div>
+</div>
 
 <!-- Скрипты -->
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/script.min.js"></script>
-<script src="js/contact.min.js"></script>
+<script src="js/cost.min.js"></script>
 
 </body>
 

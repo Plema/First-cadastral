@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css" data-inprogress="">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/block-questions.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/cost-work.min.css" data-inprogress="">
+
+</head>
+
+<body>
+  <!-- Header -->
+<include src="assets/templates/preload.html"></include>
+<include src="assets/templates/header.html"></include>
+
+<main>
+  <div class="container">
+    <ul class="crumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="cost-of-work.html">Стоимость работ</a></li>
+    </ul>
+  </div>
+
+  <div class="all-cost">
+    <div class="container">
+      <div class="heading heading1">
+        <h2>Стоимость <span> работ</span></h2>
+      </div>
+      <h3>Мы создали для Вас форму расчета стоимости межевания земельных участков, технического плана на сооружение, геодезических работ и выноса границ участка в натуру. Если у Вас останутся вопросы к полученным расчетам или Вы не найдете необходимого вида работ звонитие или оставьте Вашу заявку на расчет стоимости или консультацию любым удобным для Вас способом.</h3>
+      <form action="" class="top-form">
+        <div class="all-check">
+          <div class="left-part">
+
+            <div class="one-part">
+              <h5>Собственник объекта</h5>
+              <div class="one-radio">
+                <input type="radio"  id="ur-l" name="face" checked>
+                <label for="ur-l">Юридическое лицо</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="phis-l" name="face">
+                <label for="phis-l">Физическое лицо</label>
+              </div>
+            </div>
+
+            <div class="one-part">
+              <h5>Объект</h5>
+              <div class="one-radio">
+                <input type="radio"  id="obj1" name="object" checked>
+                <label for="obj1">Жилой дом</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="obj2" name="object">
+                <label for="obj2">Нежилое здание</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="obj3" name="object">
+                <label for="obj3">Сооружение</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="obj4" name="object">
+                <label for="obj4">Нежилое помещение</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="obj5" name="object">
+                <label for="obj5">Машино-место</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="obj6" name="object">
+                <label for="obj6">Многоквартирный дом</label>
+              </div>
+            </div>
+
+          </div>
+          <div class="right-part">
+            <div class="one-part">
+              <h5>Действие</h5>
+              <div class="one-radio">
+                <input type="radio"  id="act1" name="action"  checked class="act">
+                <label for="act1">Образовать часть для аренды</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="act2" name="action" class="act" >
+                <label for="act2">Узаконить перепланировку</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio"  id="act3" name="action" class="act">
+                <label for="act3">Технический план для постановки на учет </label>
+              </div>
+              <div class="one-radio">
+                <input type="radio"  id="act4" name="action" class="act">
+                <label for="act4">Технический план для ввода в эксплуатацию</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio"  id="act5" name="action" class="act">
+                <label for="act5">Снять с кадастрового учета</label>
+              </div>
+            </div>
+
+            <div class="one-part special-block">
+              <h5>Необходимость проектной документации </h5>
+              <div class="one-radio">
+                <input type="radio"  id="spec-bl1" name="spec1" checked>
+                <label for="spec-bl1">Имеется проектная документация</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="spec-bl2" name="spec1">
+                <label for="spec-bl2">Нужно подготовить проектую документацию</label>
+              </div>
+            </div>
+
+            <div class="one-part">
+              <h5>Требуется подача документов?</h5>
+              <div class="one-radio">
+                <input type="radio"  id="doc1" name="documents" checked>
+                <label for="doc1">Имеется проектная документация</label>
+              </div>
+              <div class="one-radio">
+                <input type="radio" id="doc2" name="documents">
+                <label for="doc2">Нужно подготовить проектую документацию</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h5>Площадь (протяженность) объекта в м</h5>
+        <p>(при аренде - площадь передаваемая в аренду)</p>
+        <input type="number" placeholder="100" class="inp-text" value="100" required>
+        <div class="button-with-arrow arrow-right">
+          <span>
+            <img src="img/arrow.png" alt="">
+          </span>
+          <button>Посчитать</button>
+        </div>
+      </form>
+
+      <form action="" class="form-email">
+        <h5>Отправить расчет на почту</h5>
+        <input type="email" placeholder="Введите email *" class="inp-text">
+        <div class="button-with-arrow arrow-right">
+          <span>
+            <img src="img/arrow.png" alt="">
+          </span>
+          <button>Отправить расчет на почту</button>
+        </div>
+      </form>
+
+    </div>
+
+    <div class="result-price">
+        <div>
+          <p class="left">Примерная стоимость выбранных работ</p>
+          <p class="right">105 500 руб.</p>
+        </div>
+        <div>
+          <span  class="left">Размер государственной пошлины при регистрации</span>
+          <span class="right">22 000 руб.</span>
+        </div>
+        <div>
+          <strong  class="left">Примерная стоимость включая госпошлину</strong>
+          <strong class="right">127 500 руб.</strong>
+        </div>
+    </div>
+  </div>
+    
+  <include src="assets/templates/block-questions.html"></include>
+
+</main>
+
+<include src="assets/templates/footer.html"></include>
+<include src="assets/templates/pop-up.html"></include>
+
+<!-- Скрипты -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/script.min.js"></script>
+<script src="js/cost.min.js"></script>
+
+</body>
+
+</html>
