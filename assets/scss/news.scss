@@ -1,5 +1,6 @@
 .search-block-news{
   position: relative;
+  z-index: 2;
   margin-bottom: 35px;
   input{
     width: 100%;
@@ -150,7 +151,7 @@
     &:before, &:after{
       content: '';
       position: absolute;
-      z-index: 0;
+      z-index: -1;
       background: url('../img/company1.png') no-repeat;
       width: 512px;
       height: 432px;

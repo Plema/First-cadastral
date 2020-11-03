@@ -46,20 +46,10 @@
   }
   .right-part{
     margin: 0 auto;
-    padding: 35px 20px 5px;
+    padding: 35px 20px 0px;
     max-width: 300px;
     width: 100%;
     position: relative;
-    &:after{
-      left: 0;
-      bottom: 70px;
-      width: 5px;
-      height: 130px;
-      background: var(--blue-color);
-      content: '';
-      position: absolute;
-      z-index: 3;
-    }
     &:before{
       background: url('../img/White_Matte_phone2.png') no-repeat 0% 0%;
       background-size: contain;
@@ -87,8 +77,8 @@
       }
     }
     p{
-      font-size: 17px;
-      margin-bottom: 20px;
+      font-size: 15px;
+      margin-bottom: 18px;
       max-width: 325px;
       width: 100%;
       position: relative;

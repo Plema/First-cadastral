@@ -24,7 +24,7 @@
   <include src="assets/templates/header.html"></include>
 
    <!-- Основной контент -->
-<main class="main">
+<main class="main"  id="top">
 
   <div class="container">
     <ul class="crumbs">
@@ -71,21 +71,27 @@
           <p><span class="inline">Мы работаем с пн по пт:  с 9:00 - до 18:00.</span>  Необходимо заранее предупредить о визите для заказа пропуска</p>
         </div>
       </div>
-      <div class="map-with-map">
+    </div>
+
+    <div class="map-with-map">
         <div class="big-map" id="all-map"></div>
         <div class="map-marshrut" id="map-marshrut"></div>
-      </div>
+    </div>
 
+    <div class="container">
       <div class="two-photo">
         <img src="img/photo-c1.jpg" alt="">
         <img src="img/photo-c2.jpg" alt="">
       </div>
     </div>
+    
   </section>
 
 
   <include src="assets/templates/block-questions.html"></include>
-
+  <a href="#top" class="arrow-to-top">
+    <img src="img/arrow.png" alt="">
+  </a>
 </main>
 
 <!-- Footer -->
