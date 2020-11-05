@@ -98,7 +98,7 @@
         <nav>
           <ul>
             <li><a href="about-company.html">О компании</a>
-                <div class="hidden-list">
+                <div class="hidden-list hid-comp">
                   <ol>
                     <li><a href="">История</a></li>
                     <li><a href="">Наша команда</a></li>
@@ -111,17 +111,33 @@
                 </div>
             </li>
             <li><a href="">Кадастровые работы</a>
-              <div class="hidden-list">
-                <ol>
-                  <li><a href="">История</a></li>
-                  <li><a href="">Наша команда</a></li>
-                </ol>
+              <div class="hidden-list cadastr-hid">
+                <div class="tabs-cadastr-head">
+                  <h5 data-cadHead="cadastr1" class="activ-cadHead"><span>Земельные участки</span></h5>
+                  <h5 data-cadHead="cadastr2"><span>Объекты капитального
+                    строительства</span> и машино места</h5>
+                  <h5 data-cadHead="cadastr3"><span>Проектирование</span></h5>
+                  <h5 data-cadHead="cadastr4"><span>Юридические услуги</span></h5>
+                </div>
+                <div class="cadastr1 block-cad">
+                  <ol>
+                    <li><a href="">Уточнение границ</a></li>
+                    <li><a href="">Перераспределение участков</a></li>
+                    <li><a href="">Геодезические работы <i class="icon-plus"></i></a></li>
+                  </ol>
+                  <ol>
+                    <li><a href="">Образование участка</a></li>
+                    <li><a href="">Исправление реестровой ошибки</a></li>
+                    <li><a href="">Межевание участка под многоквартирным домом</a></li>
+                  </ol>
+                </div>
+                
               </div>
             </li>
             <li><a href="cost-of-work">Стоимость работ</a></li>
             <li><a href="news.html">Новости отрасли</a></li>
             <li><a href="">Делимся опытом</a>
-              <div class="hidden-list">
+              <div class="hidden-list share-hid">
                 <ol>
                   <li><a href="FAQ.html">Вопрос - ответ</a></li>
                   <li><a href="registry-failures.html">Приостановление и отказ Росреестра</a></li>
@@ -209,19 +225,19 @@
       <div class="left-part">
         <p>Оперативно проконсультируем Вас и подготовим коммерческое предложение.</p>
         <h4>Вы так же можете произвести расчет стоимости услуг и получить <a href="">Коммерческое предложение</a> на нашем сайте</h4>
-        <div class="button-with-arrow arrow-right">
+        <a href="cost-of-work.html" class="button-with-arrow arrow-right">
           <span>
             <img src="img/arrow.png" alt="">
           </span>
           <button>Калькулятор</button>
-        </div>
+        </a>
       </div>
       <div class="right-part">
         <h3>Получить<span> консультацию</span></h3>
         <p>Позвоните нам по <span>тел. <a href="tal:+7 495 970-00-01">+7 495 970-00-01</a></span>
         или закажите бесплатную консультацию</p>
         <div class="but-p">
-          <button class="d3button"><span>Консультация</span><i class="icon-message-icon"></i></button>
+          <button class="d3button  open-consult"><span>Консультация</span><i class="icon-message-icon"></i></button>
           <p>Мы свяжемся с вами сразу после получения вашей заявки</p>
         </div>
       </div>
@@ -263,7 +279,7 @@
             </div>
           </div>
           <div class="button-search-head">
-            <div class="button-with-arrow">
+            <div class="button-with-arrow open-call">
               <span>
                 <img src="img/arrow.png" alt="">
               </span>
@@ -318,7 +334,3 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/script.min.js"></script>
 <script src="js/contact.min.js"></script>
-
-</body>
-
-</html>

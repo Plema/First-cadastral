@@ -2,8 +2,11 @@ header{
   padding: 20px 0 0 0;
   width: 100%;
   // position: absolute;
-
+  .container{
+    overflow: visible;
+  }
 }
+
 .fixed-header{
   background: #fff;
   position: fixed;
@@ -12,7 +15,7 @@ header{
 .logotip{
   max-width: 249px;
   width: 100%;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
   h6{
     margin-top: 15px;
     font-weight: 700;
@@ -189,7 +192,8 @@ nav{
   ul{
     li{
       margin-bottom: 30px;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
+      position: relative;
       a{
         font-size: var(--fz18);
         font-family: var(--font-baeu);
@@ -218,6 +222,86 @@ nav{
       }
       .hidden-list{
         display: none;
+        transform: scale(0);
+        position: absolute;
+        left: 0;
+        box-shadow: 0 6px 32px rgba(0, 0, 0, 0.18);
+        background-color: #ffffff;
+        padding: 15px 15px 5px 20px;
+        top: 30px;
+        ol{
+          li{
+            margin-bottom: 15px;
+            padding-bottom: 0;
+            a{
+              font-size: 14px;
+              font-weight: 500; 
+              text-decoration: underline;
+              &:before{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .hid-comp, .share-hid{
+        width: 232px;
+        left: -20px;
+      }
+      .cadastr-hid{
+        width: 1080px;
+        left: -220%;
+        .tabs-cadastr-head{
+          display: flex;
+          align-items: stretch;
+          justify-content: space-between;
+          border-bottom: 1px solid #908f91;
+          margin-bottom: 10px;
+          h5{
+            width: 22%;
+            padding-right: 50px; 
+            font-weight: 400;
+            position: relative;
+            padding-bottom: 20px;
+            cursor: pointer;
+            span{
+              font-weight: 700;
+            }
+            &:before{
+              content: '';
+              width: 0;
+              height: 3px;
+              position: absolute;
+              bottom: 0;
+              background: var(--blue-color);
+              left: 0;
+              transition: 0.5s;
+            }
+            &:hover{
+              &:before{
+                width: 55px;
+              }
+            }
+          }
+          .activ-cadHead{
+            color: var(--blue-color);
+          }
+        }
+        .block-cad{
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          ol{
+            width: 22%;
+          }
+        }
+        @media (min-width: 1400px) {
+          width: 1160px;
+          left: -240%;
+        }
+        @media (min-width: 1600px) {
+          width: 1280px;
+        }
       }
     }
   }
@@ -374,7 +458,7 @@ nav{
   }
   .logotip{
     margin-right: 0;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   .all-right-part{
     max-width: 970px;
@@ -411,12 +495,18 @@ nav{
     background: transparent;
     ul{
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       li{
         margin-bottom: 0;
         a{
           font-size: 16px;
+        }
+        &:hover{
+          .hidden-list{
+            display: block;
+            transform: scale(1);
+          }
         }
       }
     }

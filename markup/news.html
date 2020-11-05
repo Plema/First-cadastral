@@ -95,7 +95,7 @@
         <nav>
           <ul>
             <li><a href="about-company.html">О компании</a>
-                <div class="hidden-list">
+                <div class="hidden-list hid-comp">
                   <ol>
                     <li><a href="">История</a></li>
                     <li><a href="">Наша команда</a></li>
@@ -108,17 +108,33 @@
                 </div>
             </li>
             <li><a href="">Кадастровые работы</a>
-              <div class="hidden-list">
-                <ol>
-                  <li><a href="">История</a></li>
-                  <li><a href="">Наша команда</a></li>
-                </ol>
+              <div class="hidden-list cadastr-hid">
+                <div class="tabs-cadastr-head">
+                  <h5 data-cadHead="cadastr1"><span>Земельные участки</span></h5>
+                  <h5 data-cadHead="cadastr2"><span>Объекты капитального
+                    строительства</span> и машино места</h5>
+                  <h5 data-cadHead="cadastr3"><span>Проектирование</span></h5>
+                  <h5 data-cadHead="cadastr4"><span>Юридические услуги</span></h5>
+                </div>
+                <div class="cadastr1 block-cad">
+                  <ol>
+                    <li><a href="">Уточнение границ</a></li>
+                    <li><a href="">Перераспределение участков</a></li>
+                    <li><a href="">Геодезические работы <i class="icon-plus"></i></a></li>
+                  </ol>
+                  <ol>
+                    <li><a href="">Образование участка</a></li>
+                    <li><a href="">Исправление реестровой ошибки</a></li>
+                    <li><a href="">Межевание участка под многоквартирным домом</a></li>
+                  </ol>
+                </div>
+                
               </div>
             </li>
             <li><a href="cost-of-work">Стоимость работ</a></li>
             <li><a href="news.html">Новости отрасли</a></li>
             <li><a href="">Делимся опытом</a>
-              <div class="hidden-list">
+              <div class="hidden-list share-hid">
                 <ol>
                   <li><a href="FAQ.html">Вопрос - ответ</a></li>
                   <li><a href="registry-failures.html">Приостановление и отказ Росреестра</a></li>
@@ -243,7 +259,7 @@
             </div>
           </div>
           <div class="button-search-head">
-            <div class="button-with-arrow">
+            <div class="button-with-arrow open-call">
               <span>
                 <img src="img/arrow.png" alt="">
               </span>
@@ -442,7 +458,54 @@
         </div>
         <div class="block-checkbox">
           <input type="checkbox" name="check" id="check" checked="">
-          <label for="check">Согласен с <span>политикой конфиденциальности</span></label>
+          <label for="check">Согласен с <span class="open-politic">политикой конфиденциальности</span></label>
+        </div>
+      </form>
+  </div>
+</div>
+
+<div class="pop-up consult-pop">
+  <div class="close-pop">
+    <i class="icon-plus"></i>
+  </div>
+  <h3>Получить <strong>консультацию</strong></h3>
+  <div class="content-pop">
+    <h6>Мы свяжемся с вами сразу после прочтения
+      вашей заявки</h6>
+      <form action="">
+        <div class="two-part">
+          <div class="left">
+            <div class="inp-lab">
+              <label for="org">Ваше имя</label>
+              <input type="text" placeholder="Как к Вам обращаться?" required="">
+            </div>
+            <div class="inp-lab">
+              <label for="org">Адрес электронной почты</label>
+              <input type="email" placeholder="Введите email" required="">
+            </div>
+            <div class="inp-lab">
+              <label for="phone">Номер телефона</label>
+              <input type="number" placeholder="В формате +7 (123) 456-78-91" required="">
+            </div>
+          </div>
+          <div class="right right-consul">
+              <div class="inp-lab">
+                <label for="org">Текст сообщения</label>
+                <textarea type="text" placeholder="Напишите сообщение" required=""></textarea>
+                <span class="min">* - все поля формы
+                  обязательны к заполнению</span>
+              </div>
+              <div class="button-with-arrow arrow-right open-thank">
+                <span>
+                  <img src="img/arrow.png" alt="">
+                </span>
+                <button>Отправить</button>
+              </div>
+          </div>
+        </div>
+        <div class="block-checkbox">
+          <input type="checkbox" name="check" id="check" checked="">
+          <label for="check">Согласен с <span class="open-politic">политикой конфиденциальности</span></label>
         </div>
       </form>
   </div>
@@ -455,6 +518,16 @@
   <div class="content-pop">
     <strong>Спасибо!</strong>
     <p>Мы свяжемся с Вами в ближайшее время</p>
+  </div>
+</div>
+
+<div class="pop-up thank-review-pop ">
+  <div class="close-pop">
+    <i class="icon-plus"></i>
+  </div>
+  <div class="content-pop">
+    <strong>Спасибо!</strong>
+    <p>Ваш отзыв будет опубликован ближайшим временем</p>
   </div>
 </div>
 

@@ -8,7 +8,7 @@ window.onload = function () {
 
 $(document).ready(function(){
 
-
+  $('.arrow-to-top').fadeIn();
   if ($(window).width() >= '768'){
     var scrTop = $(window).scrollTop();
     if(scrTop > 0){
@@ -40,13 +40,13 @@ $(document).ready(function(){
   });
 
 
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 100) {
-  //   $('.arrow-to-top').fadeIn();
-  //   } else {
-  //   $('.arrow-to-top').fadeOut();
-  //   }
-  //   });
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      $('.arrow-to-top').fadeIn();
+    } else {
+      $('.arrow-to-top').fadeOut();
+    }
+  });
 
   
   $( ".close-pop" ).click(function(event) {
@@ -63,8 +63,22 @@ $(document).ready(function(){
   });
 
   
+  $( ".open-politic").click(function(event) {
+    $('.politic-pop').addClass('open-pop-up');
+    $('.back-dark').addClass('open-back-dark');
+    $('body').css('overflow-y','hidden');
+  });
+
+  
   $( ".open-call").click(function(event) {
     $('.call-pop').addClass('open-pop-up');
+    $('.back-dark').addClass('open-back-dark');
+    $('body').css('overflow-y','hidden');
+  });
+
+  
+  $( ".open-consult").click(function(event) {
+    $('.consult-pop').addClass('open-pop-up');
     $('.back-dark').addClass('open-back-dark');
     $('body').css('overflow-y','hidden');
   });
@@ -78,9 +92,17 @@ $(document).ready(function(){
 
   
   $( ".open-thank").click(function(event) {
-    // event.preventDefault()
+    event.preventDefault()
     $('.pop-up').removeClass('open-pop-up');
     $('.thank-pop').addClass('open-pop-up');
+    $('.back-dark').addClass('open-back-dark');
+    $('body').css('overflow-y','hidden');
+  });
+  
+  $( ".open-thank-review").click(function(event) {
+    event.preventDefault()
+    $('.pop-up').removeClass('open-pop-up');
+    $('.thank-review-pop').addClass('open-pop-up');
     $('.back-dark').addClass('open-back-dark');
     $('body').css('overflow-y','hidden');
   });

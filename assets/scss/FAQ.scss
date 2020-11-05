@@ -7,21 +7,23 @@
     font-size: 18px;
   }
 }
-.button-with-arrow{
-  display: flex;
-  max-width: 300px;
-  margin: 0 auto 50px;
-  position: relative;
-  z-index: 2;
-  button{
-    min-width: 270px;
-    height: auto;
-    padding: 17px;
-    border-radius: 26px;
-  }
-  span{
-    width: 44px;
-    height: 44px;
+main{
+  .button-with-arrow{
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto 50px;
+    position: relative;
+    z-index: 2;
+    button{
+      min-width: 270px;
+      height: auto;
+      padding: 17px;
+      border-radius: 26px;
+    }
+    span{
+      width: 44px;
+      height: 44px;
+    }
   }
 }
 .search-block-news{

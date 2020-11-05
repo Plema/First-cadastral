@@ -97,7 +97,7 @@
     }
   }
 }
-.call-pop{
+.call-pop, .consult-pop{
   max-width: 545px;
   h3{
     font-size: 24px;
@@ -224,7 +224,7 @@
     }
   }
 }
-.thank-pop{
+.thank-pop, .thank-review-pop{
   max-width: 300px;
   width: 100%;
   strong{
@@ -249,7 +249,7 @@
 }
 
 @media (min-width: 768px){
-  .call-pop{
+  .call-pop, .consult-pop{
     padding: 35px 20px 30px;
     form{
       .two-part{
@@ -257,6 +257,16 @@
       }
       .left, .right{
         max-width: 242px;
+      }
+      .right-consul{
+        .min{
+          margin-bottom: 20px;
+          display: block;
+        }
+      }
+      .button-with-arrow{
+        margin: 0;
+        margin-bottom: 0;
       }
     }
   }

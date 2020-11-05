@@ -42,22 +42,44 @@ $(document).ready(function(){
 });
 
 
-var myMap;
-ymaps.ready(init);
-function init () {
-    myMap = new ymaps.Map('map', {
-        center: [55.713917, 37.721526], // Москва
-        zoom: 15
-    }, {
-        searchControlProvider: 'yandex#search'
-    });
-    myPlacemark = new ymaps.Placemark([55.713989 ,37.718659], {
-      balloonContent: 'пр-кт Волгоградский д. 43 корп. 3'
-    }, {
-        iconLayout: 'default#image',
-        // preset: 'islands#icon',
-        iconColor: '#FF3333'
-    }),
-    myMap.geoObjects
-        .add(myPlacemark);
-}
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+          center: [55.713917, 37.721526],
+          zoom: 15
+      }, {
+          searchControlProvider: 'yandex#search'
+      })
+  
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        balloonContent: 'пр-кт Волгоградский д. 43 корп. 3'
+      }, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/myIcon.png',
+          iconImageSize: [50, 55],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -38]
+      }),
+      myMap.geoObjects
+          .add(myPlacemark);
+  });
+
+// var myMap;
+// ymaps.ready(init);
+// function init () {
+//     myMap = new ymaps.Map('map', {
+//         center: [55.713917, 37.721526], // Москва
+//         zoom: 15
+//     }, {
+//         searchControlProvider: 'yandыex#search'
+//     });
+//     myPlacemark = new ymaps.Placemark([55.713989 ,37.718659], {
+//       balloonContent: 'пр-кт Волгоградский д. 43 корп. 3'
+//     }, {
+//         iconLayout: 'default#image',
+//         // preset: 'islands#icon',
+//         iconColor: '#FF3333'
+//     }),
+//     myMap.geoObjects
+//         .add(myPlacemark);
+// }
