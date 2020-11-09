@@ -63,23 +63,3 @@ ymaps.ready(function () {
       myMap.geoObjects
           .add(myPlacemark);
   });
-
-// var myMap;
-// ymaps.ready(init);
-// function init () {
-//     myMap = new ymaps.Map('map', {
-//         center: [55.713917, 37.721526], // Москва
-//         zoom: 15
-//     }, {
-//         searchControlProvider: 'yandыex#search'
-//     });
-//     myPlacemark = new ymaps.Placemark([55.713989 ,37.718659], {
-//       balloonContent: 'пр-кт Волгоградский д. 43 корп. 3'
-//     }, {
-//         iconLayout: 'default#image',
-//         // preset: 'islands#icon',
-//         iconColor: '#FF3333'
-//     }),
-//     myMap.geoObjects
-//         .add(myPlacemark);
-// }
