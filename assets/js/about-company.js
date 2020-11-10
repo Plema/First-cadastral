@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-  
+  // console.log(attrCompany);
+
   $( ".tabs-company > li" ).click(function(event) {
     var attr1 = $(this).data('tab');
     var text1 = $(this).text();
@@ -22,7 +23,6 @@ $(document).ready(function(){
       var text3 = $('.partn-ac').text();
       $('.fourth-crumb > a').html(text3)
     }
-
   });
 
   //Tab3 - review
@@ -65,12 +65,6 @@ $(document).ready(function(){
     $(this).parent().parent().removeClass('show-hidden-text')
   });
   
-
-  // $( ".standart-img" ).click(function(event) {
-  //   $('.standart-img').removeClass('open-big-img')
-  //   $(this).parent().find('.big-img').addClass('open-big-img')
-  // });
-
   $('.all-history-slider').slick({
     dots: true,
     infinite: false,
@@ -105,6 +99,5 @@ $(document).ready(function(){
       },
     ]
   });
-
 
 });

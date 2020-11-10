@@ -106,6 +106,13 @@ $(document).ready(function(){
     $('.back-dark').addClass('open-back-dark');
     $('body').css('overflow-y','hidden');
   });
+  
+
+  // $( ".click-ol > li > a").click(function(event) {
+  //   var attrCompany = $(this).data('datacompany');
+  //   console.log(attrCompany)
+  //   location.hash = '#' + attrCompany;
+  // });
 
 });
 

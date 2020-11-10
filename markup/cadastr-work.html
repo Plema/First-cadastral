@@ -98,14 +98,14 @@
           <ul>
             <li><a href="about-company.html">О компании</a>
                 <div class="hidden-list hid-comp">
-                  <ol>
-                    <li><a href="">История</a></li>
-                    <li><a href="">Наша команда</a></li>
-                    <li><a href="">Отзывы</a></li>
-                    <li><a href="">Вакансии</a></li>
-                    <li><a href="">Свидетельства, Аттестаты, СРО</a></li>
-                    <li><a href="">Реквизиты</a></li>
-                    <li><a href="">Партнеры и заказчики</a></li>
+                  <ol class="click-ol">
+                    <li><a href="about-company.html" data-dataCompany="tab1">История</a></li>
+                    <li><a href="about-company.html" data-datacompany="tab2">Наша команда</a></li>
+                    <li><a href="about-company.html" data-datacompany="tab3">Отзывы</a></li>
+                    <li><a href="about-company.html" data-datacompany="tab3">Вакансии</a></li>
+                    <li><a href="about-company.html" data-datacompany="tab5">Свидетельства, Аттестаты, СРО</a></li>
+                    <li><a href="about-company.html" data-datacompany="tab6">Реквизиты</a></li>
+                    <li><a href="about-company.html" data-datacompany="tab7">Партнеры и заказчики</a></li>
                   </ol>
                 </div>
             </li>
@@ -157,7 +157,7 @@
     <ul class="crumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="cadastr-work.html">Кадастровые работы</a></li>
-      <li><a href="javascript:void(0)">Земельные участки</a></li>
+      <li><a href="javascript:void(0)" class="third-cr-work">Земельные участки</a></li>
       <li><a href="javascript:void(0)"></a></li>
     </ul>
   </div>
@@ -166,7 +166,7 @@
   </a>
 
   <div class="container all-heads">
-    <div class="first-step-head one-head active">
+    <div class="first-part-head one-head">
       <div class="heading1 heading">
         <h2>Кадастровые<span> работы</span></h2>
       </div>
@@ -180,7 +180,7 @@
 
       <div class="left-filter">
         <ul class="open-list">
-          <h5><span>Земельные участки</span> <strong class="plus">+</strong><strong class="minus">-</strong></h5>
+          <h5 data-part="first-part" class="big-filter"><span>Земельные участки</span> <strong class="plus">+</strong><strong class="minus">-</strong></h5>
           <div class="hidden-list">
             <li>Раздел участка</li>
             <li>Объединение участков</li>
@@ -200,7 +200,7 @@
           </div>
         </ul>
         <ul>
-          <h5><span>Объекты капитального строительства</span> и машино места  <strong class="plus">+</strong><strong class="minus">-</strong></h5>
+          <h5 data-part="second-part" class="big-filter"><span>Объекты капитального строительства</span> и машино места  <strong class="plus">+</strong><strong class="minus">-</strong></h5>
           <div class="hidden-list">
             <li>Раздел участка</li>
             <li>Раздел участка</li>
@@ -210,7 +210,7 @@
           </div>
         </ul>
         <ul>
-          <h5><span>Проектирование</span>  <strong class="plus">+</strong><strong class="minus">-</strong></h5>
+          <h5 data-part="third-part" class="big-filter"><span>Проектирование</span>  <strong class="plus">+</strong><strong class="minus">-</strong></h5>
           <div class="hidden-list">
             <li>Раздел участка</li>
             <li>Раздел участка</li>
@@ -221,7 +221,7 @@
         </ul>
 
         <ul>
-          <h5><span>Юридические услуги</span>  <strong class="plus">+</strong><strong class="minus">-</strong></h5>
+          <h5 data-part="fourth-part" class="big-filter"><span>Юридические услуги</span>  <strong class="plus">+</strong><strong class="minus">-</strong></h5>
           <div class="hidden-list">
             <li>Раздел участка</li>
             <li>Раздел участка</li>
@@ -232,8 +232,8 @@
         </ul>
       </div>
 
-      <div class="first-step">
-        <div class="swiper-zemlya">
+      <div class="first-part part">
+        <div class="swiper-zemlya swiper-block">
           <div class="swiper-slide">
             <img src="img/zemlya1.jpg" alt="">
             <a href="javascript:void(0)">Уточнение границ</a>
@@ -305,6 +305,172 @@
             <p>Подготовка межевого плана для уточнения границ земельного участка</p>
             <span>Подробне <i class="icon-arrow2"></i></span>
           </div>
+        </div>
+      </div>
+
+      <div class="second-part part">
+        <div class="swiper-objact swiper-block">
+          <div class="swiper-slide">
+            <img src="img/object1.jpg" alt="">
+            <a href="javascript:void(0)">Уточнение контура. Привязка к земельному участку</a>
+            <p>Подготовка Технического плана для уточнения контура объекта. Привязка объекта к земельному участку</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object2.jpg" alt="">
+            <a href="javascript:void(0)">Учет изменений в связи с
+              перепланировкой</a>
+            <p>Подготовка Технического плана для изменения сведений об объекте в связи с перепланировкой</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object3.jpg" alt="">
+            <a href="javascript:void(0)">Учет изменений в связи с
+              реконструкцией</a>
+            <p>Подготовка Технического плана для изменения сведений об объекте в связи с реконструкцией</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object4.jpg" alt="">
+            <a href="javascript:void(0)">Технический план для ввода
+              объекта в эксплуатацию</a>
+            <p>Подготовка Технического плана необходимого для ввода объекта в эксплуатацию</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object5.jpg" alt="">
+            <a href="javascript:void(0)">Постановка зданий, помещений,
+              сооружений, машино мест на учет</a>
+            <p>Подготовка Технического плана для постановки на кадастровый учет объекта</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object6.jpg" alt="">
+            <a href="javascript:void(0)">Разделение объекта или выделение его части</a>
+            <p>Подготовка Технического плана необходимого для раздела объекта или выдела из его состава части</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object7.jpg" alt="">
+            <a href="javascript:void(0)">Снятие объекта с кадастрового учета</a>
+            <p>Подготовка Акта обследования объекта для снятия его с кадастрового учета</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object8.jpg" alt="">
+            <a href="javascript:void(0)">Заключение кадастрового инженера</a>
+            <p>Проведение обследование объекта и подготовка Заключения Кадастрового инженера</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object9.jpg" alt="">
+            <a href="javascript:void(0)">Подготовка схемы расположения</a>
+            <p>Обследование объекта и подготовка схемы его расположения</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object10.jpg" alt="">
+            <a href="javascript:void(0)">Кадастровый учет объектов
+              незавершенного строительства</a>
+            <p>Подготовка Технического плана для постановки на учет объекта незавершенного строительства</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object11.jpg" alt="">
+            <a href="javascript:void(0)">Внутренние обмеры объекта</a>
+            <p>Геодезические работы по внутренним обмерам объекта, подготовка поэтажных планов и экспликаций</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/object12.jpg" alt="">
+            <a href="javascript:void(0)">Проекты перепланировок и
+              Технические заключения</a>
+            <p>Подготовим для Вас в необходимом объеме проекты перепланировок и технические заключения на объект капитального строитеьства</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="third-part part">
+        <div class="swiper-proekt swiper-block">
+          <div class="swiper-slide">
+            <img src="img/proekt1.jpg" alt="">
+            <a href="javascript:void(0)">Проекты планировки и межевания
+              для линейных объектов</a>
+            <p>Разработаем согласуем и утвердим проект межевания и планировки территории для строительства линейного объекта</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/proekt2.jpg" alt="">
+            <a href="javascript:void(0)">Проекты планировки и межевания
+              территории для коттеджных поселков</a>
+            <p>Разработаем согласуем и утвердим проект межевания и планировки территории для организации коттеджного поселка</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="fourth-part part">
+        <div class="swiper-urus swiper-block">
+          <div class="swiper-slide">
+            <img src="img/urus1.jpg" alt="">
+            <a href="javascript:void(0)">Подготовка документов для гос. регистрации права и гос. кадастрового учета</a>
+            <p>Консультация и помощь в подготовке документов для государственной регистрации прав и кадастрового учета</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/urus2.jpg" alt="">
+            <a href="javascript:void(0)">Изменение вида разрешенного
+              использования земельного участка</a>
+            <p>Консультация и помощь в изменении вида разрешенного использования земельного участка</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/urus3.jpg" alt="">
+            <a href="javascript:void(0)">Подготовка документов для гос. регистрации долгосрочных договоров аренды или сервитута</a>
+            <p>Консультация и помощь в государственной регистрации долгосрочных договоров аренды или сервитута</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/urus4.jpg" alt="">
+            <a href="javascript:void(0)">Легализация самостроя</a>
+            <p>Консультация и помощь в проектах по легализации самостроя</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/urus5.jpg" alt="">
+            <a href="javascript:void(0)">Внесение изменений в правила землепользования и застройки</a>
+            <p>Консультация и помощь при внесении изменений в правила землепользования и застройки</p>
+            <span>Подробне <i class="icon-arrow2"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="one-page  active-part">
+        <p class="top-description">Наши Кадастровые инженеры проведут обследование границ Вашего земельного участка и подготовят в соотвествии с <a href="javascript:void(0)">требованиями действующего законодательства</a> Межевой План для уточнения границ земельного участка.</p>
+        <h4>Описание услуги:</h4>
+        <p class="top-description">Подготовка межевого плана для уточнения границ земельного участка- это кадастровые работы необходимые для внесения сведений о фактическом прохождении на местности границы земельного участка в Единый государственный реестр недвижимости (ЕГРН). <a href="javascript:void(0)">Включают в себя:</a></p>
+
+        <ul>
+          <li>Консультации и изучение документов Заказчика;</li>
+          <li>Выезд геодезиста для измерении на местности поворотных точек прохождения границы участка;</li>
+          <li>Составление межевого плана;</li>
+          <li>Сопровождения процедуры согласования параметров прохождения границы с соседями;</li>
+          <li>Подачу согласованного межевого плана в Росреестр.</li>
+        </ul>
+
+        <h5 class="mini-head"> Такой межевой план <span>Вам понадобиться в следующих случаях:</span></h5>
+
+        <div class="block-with-border">
+          <ol>
+            <li>Вы не можете найти свой земельный участок на <a href="javascript:void(0)"> публичной кадастровой карте;</a></li>
+            <li><span>Вы не находите в разделе 3.2 Выписки из ЕГРН сведений о средней квадратической погрешности </span> определения координат характерных точек границ земельного участка;</li>
+            <li><span> Вы не находите в разделе 1 Выписки из ЕГРН </span> сведений о погрешности определения точности (+/-) площади земельного участка.</li>
+          </ol>
+        </div>
+
+        <div class="block-background">
+          
         </div>
       </div>
     </div>
