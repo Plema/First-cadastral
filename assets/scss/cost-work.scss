@@ -1,40 +1,51 @@
 h3{
   text-align: center;
   font-weight: 700;
-  max-width: 1185px;
+  max-width: 1240px;
   width: 100%;
-  margin: 0 auto 50px;
+  margin: 0 auto;
   font-size: 18px;
+  &:last-of-type{
+    margin-bottom: 50px;
+  }
+  a{
+    color: var(--blue-color);
+    font-weight: 700;
+    text-decoration: underline;
+  }
 }
-.result-price{
-  max-width: 600px;
+.custom-lict{
+  max-width: 815px;
   width: 100%;
-  margin: 0 auto 50px;
-  background: #f5f2f0;
-  padding: 25px 10px;
-  div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    p, span, strong{
-      font-size: 14px;
-    }
-    span{
-      color: var(--blue-color);
-    }
-    strong{
-      font-weight: 700;
-    }
-    .left{
-      padding-right: 30px;
-    }
-    .right{
-      min-width: 100px;
+  margin: 0 auto 45px;
+  h5{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  li{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    &:before{
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: url('../img/galochka.png') no-repeat 50% 50%;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
   }
 }
 form{
+  max-width: 815px;
+  width: 100%;
+  margin: 0 auto;
   h5{
     font-size: 16px;
     font-weight: 700;
@@ -65,6 +76,9 @@ form{
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 70px;
+    max-width: 815px;
+    width: 100%;
+    margin: 0 auto 70px;
   }
   .one-part{
     margin-bottom: 40px;
@@ -74,9 +88,12 @@ form{
     input{
       display: none;
     }
+    label{
+      font-size: 14px;
+    }
     input + label{
       position: relative;
-      padding: 5px 50px 15px 30px; 
+      padding: 5px 20px 15px 30px; 
       margin-top: 0px;
     }
     input + label:before{
@@ -100,12 +117,12 @@ form{
     }
   }
   .button-with-arrow{
-    max-width: 190px;
+    max-width: 265px;
     display: flex;
     margin: 0 auto;
     button{
       padding: 17px 5px;
-      min-width: 170px;
+      min-width: 250px;
       height: auto;
       border-radius: 26px;
     }
@@ -119,6 +136,16 @@ form{
 
 .form-email{
   margin-bottom: 50px;
+  h5{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .two-part{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
   .button-with-arrow{
     max-width: 300px;
     display: flex;
@@ -131,6 +158,7 @@ form{
     }
     span{
       width: 44px;
+      min-width: 44px;
       height: 44px;
     }
   }
@@ -138,13 +166,18 @@ form{
 
 
 @media (min-width: 768px){
-  .result-price{
-    padding: 30px 70px 70px 30px;
-  }
   .top-form{
     .all-check{
       flex-wrap: nowrap;
       justify-content: center;
+    }
+  }
+  .form-email{
+    .button-with-arrow{
+      max-width: 450px;
+      button{
+        min-width: 435px;
+      }
     }
   }
 }
@@ -159,22 +192,19 @@ form{
       z-index: -1;
     }
     &:before{
-      background: url('../img/top-cost.png') no-repeat 50% 50%;
-      top: 0;
-      right: 5%;
-      width: 1800px;
-      height: 724px;
+      background: url('../img/cost3.png') no-repeat 50% 50%;
+      top: 35%;
+      right: 0;
+      width: 800px;
+      height: 1175px;
     }
     &:after{
       background: url('../img/cost2.png') no-repeat 50% 50%;
-      top: 22%;
-      right: -30%;
-      width: 1876px;
-      height: 957px;  
+      top: 40%;
+      left: 5%;
+      width: 514px;
+      height: 735px;  
     }
-  }
-  .result-price{
-    max-width: 820px;
   }
   .top-form{
     .one-part{
@@ -182,6 +212,11 @@ form{
     }
     .left-part{
       margin-right: 100px;
+    }
+  }
+  .form-email{
+    .two-part{
+      justify-content: space-between;
     }
   }
 }

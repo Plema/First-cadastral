@@ -32,9 +32,27 @@
   <div class="all-cost">
     <div class="container">
       <div class="heading heading1">
-        <h2>Стоимость <span> работ</span></h2>
+        <h2>Стоимость <span> наших услуг</span></h2>
       </div>
-      <h3>Мы создали для Вас форму расчета стоимости межевания земельных участков, технического плана на сооружение, геодезических работ и выноса границ участка в натуру. Если у Вас останутся вопросы к полученным расчетам или Вы не найдете необходимого вида работ звонитие или оставьте Вашу заявку на расчет стоимости или консультацию любым удобным для Вас способом.</h3>
+      <h3>Уважаемые клиенты!</h3>
+      <h3>Используйте удобную форму расчета стоимости работ по межеванию земельных участков, подготовки технических планов на сооружение, геодезических работ и выноса границ участка в натуру.</h3>
+      <h3>Для Вашего удобства мы указываем в расчете размере государственных пошлин на осуществление регистрационных действий. </h3>
+      <h3>После расчета Вы можете самостоятельно сформировать предварительное коммерческое предложение.</h3>
+      <h3>Не все условия можно учесть в предварительном расчетестоимости работ, по этому если у Вас останутся вопросы к полученным цыфрам или Вы не найдете необходимого вида работ звоните или оставьте Вашу заявку на консультацию любым удобным для Вас способом.</h3>
+      <h3>Стоимость всех услуг Вы можете посмотреть <a href="javascript:boid(0)">здесь.</a></h3>
+      <ul class="custom-lict">
+        <h5>На стоимость влияют такие факторы как:</h5>
+        <li>Площадь объекта;</li>
+        <li>Количество поворотных точек участка;</li>
+        <li>Наличие документов для выполнения работ;</li>
+      </ul>
+      <ul  class="custom-lict">
+        <h5>Наша компания всегда готова предоставить скидку Заказчику в случаях:</h5>
+        <li>Заключения договора в течении 10ти рабочих дней после предоставления коммерческого предложения;</li>
+        <li>Заключения рамочного соглашения на проведение кадастровых работ с фиксацией их стоимости;</li>
+        <li>Предоставление альтернативного коммерческого предложения с меньшей ценой;</li>
+        <li>Изучения необходимых для проведения работ документов и уточнения стоимости предварительного расчета;</li>
+      </ul>
       <form action="" class="top-form">
         <div class="all-check">
           <div class="left-part">
@@ -52,7 +70,7 @@
             </div>
 
             <div class="one-part">
-              <h5>Объект</h5>
+              <h5>Вид объекта</h5>
               <div class="one-radio">
                 <input type="radio"  id="obj1" name="object" checked>
                 <label for="obj1">Жилой дом</label>
@@ -82,38 +100,26 @@
           </div>
           <div class="right-part">
             <div class="one-part">
-              <h5>Действие</h5>
+              <h5>Виды кадастровых работ</h5>
               <div class="one-radio">
                 <input type="radio"  id="act1" name="action"  checked class="act">
-                <label for="act1">Образовать часть для аренды</label>
+                <label for="act1">Постановка на кадастровый учет</label>
               </div>
               <div class="one-radio">
                 <input type="radio" id="act2" name="action" class="act" >
-                <label for="act2">Узаконить перепланировку</label>
-              </div>
-              <div class="one-radio">
-                <input type="radio"  id="act3" name="action" class="act">
-                <label for="act3">Технический план для постановки на учет </label>
-              </div>
-              <div class="one-radio">
-                <input type="radio"  id="act4" name="action" class="act">
-                <label for="act4">Технический план для ввода в эксплуатацию</label>
-              </div>
-              <div class="one-radio">
-                <input type="radio"  id="act5" name="action" class="act">
-                <label for="act5">Снять с кадастрового учета</label>
+                <label for="act2">Снятие с кадастрового учета</label>
               </div>
             </div>
 
             <div class="one-part special-block">
-              <h5>Необходимость проектной документации </h5>
+              <h5>Наличие проектной документации </h5>
               <div class="one-radio">
                 <input type="radio"  id="spec-bl1" name="spec1" checked>
-                <label for="spec-bl1">Имеется проектная документация</label>
+                <label for="spec-bl1">Есть проектная документация</label>
               </div>
               <div class="one-radio">
                 <input type="radio" id="spec-bl2" name="spec1">
-                <label for="spec-bl2">Нужно подготовить проектую документацию</label>
+                <label for="spec-bl2">Необходимо подготовить проектую документацию</label>
               </div>
             </div>
 
@@ -138,40 +144,58 @@
           <span>
             <img src="img/arrow.png" alt="">
           </span>
-          <button>Посчитать</button>
+          <button>Рассчитать стоимость</button>
         </div>
       </form>
 
       <form action="" class="form-email">
-        <h5>Отправить расчет на почту</h5>
-        <input type="email" placeholder="Введите email *" class="inp-text">
+        <div class="two-part">
+          <div class="part-form">
+            <h5>Предварительная стоимость работ</h5>
+            <input type="email" class="inp-text" readonly>
+          </div>
+          <div class="part-form">
+            <h5>Размер государственной пошлины</h5>
+            <input type="email" class="inp-text" readonly>
+          </div>
+        </div>
+
         <div class="button-with-arrow arrow-right">
           <span>
             <img src="img/arrow.png" alt="">
           </span>
-          <button>Отправить расчет на почту</button>
+          <button>Сформировать коммерческое предложение</button>
         </div>
       </form>
 
     </div>
 
-    <div class="result-price">
-        <div>
-          <p class="left">Примерная стоимость выбранных работ</p>
-          <p class="right">105 500 руб.</p>
-        </div>
-        <div>
-          <span  class="left">Размер государственной пошлины при регистрации</span>
-          <span class="right">22 000 руб.</span>
-        </div>
-        <div>
-          <strong  class="left">Примерная стоимость включая госпошлину</strong>
-          <strong class="right">127 500 руб.</strong>
-        </div>
-    </div>
   </div>
     
-  <include src="assets/templates/block-questions.html"></include>
+  <div class="block-questions">
+    <div class="container">
+      <div class="heading heading2">
+        <h2>Остались<span> вопросы?</span></h2>
+      </div>
+      <div class="content-questions">
+        <div class="left-part">
+          <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+          <h4>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</h4>
+        </div>
+        <div class="right-part">
+          <h3>Получить<span> консультацию</span></h3>
+          <p>Позвоните нам по <span>тел. <a href="tal:+7 495 970-00-01">+7 495 970-00-01</a></span>
+          или закажите бесплатную консультацию</p>
+          <div class="but-p">
+            <button class="d3button  open-consult"><span>Консультация</span><i class="icon-message-icon"></i></button>
+            <p>Мы свяжемся с вами сразу после получения вашей заявки</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <a href="#top" class="arrow-to-top">
     <img src="img/arrow.png" alt="">
   </a>
