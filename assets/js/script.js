@@ -8,7 +8,7 @@ window.onload = function () {
 
 $(document).ready(function(){
 
-  $('.arrow-to-top').fadeIn();
+  $('.arrow-to-top').fadeOut();
   if ($(window).width() >= '768'){
     var scrTop = $(window).scrollTop();
     if(scrTop > 0){
@@ -108,11 +108,6 @@ $(document).ready(function(){
   });
   
 
-  // $( ".click-ol > li > a").click(function(event) {
-  //   var attrCompany = $(this).data('datacompany');
-  //   console.log(attrCompany)
-  //   location.hash = '#' + attrCompany;
-  // });
 
 });
 

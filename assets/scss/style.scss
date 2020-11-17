@@ -185,6 +185,26 @@ p, a, li, span, h1, h2, h3, h4, h5, h6{
         content: '05';
     }
 }
+.heading6{
+    &:before{
+        content: '06';
+    }
+}
+.heading7{
+    &:before{
+        content: '07';
+    }
+}
+.heading8{
+    &:before{
+        content: '08';
+    }
+}
+.heading9{
+    &:before{
+        content: '09';
+    }
+}
 .crumbs{
     display: flex;
     align-items: flex-start;

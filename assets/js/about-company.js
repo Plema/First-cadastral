@@ -1,11 +1,32 @@
 $(document).ready(function(){
 
-  // console.log(attrCompany);
+
+  var url = window.location.hash.replace("#","");
+  $('main').find('.' + url).addClass('active-tab')
+  $('.fourth-crumb').css('display','none')
+  var text2 = $('li[data-tab= ' + url + ' ]').text()
+  console.log(text2);
+
+  $('.third-crumb > a').html(text2)
+  $(".tabs-company > li").removeClass('active')
+  $('.' + url + '-class').addClass('active');
+  $('.one-tab').removeClass('active-tab');
+  $('main').find('.' + url).addClass('active-tab')
+
+  if( url === "tab3" ){
+    $('.fourth-crumb').css('display','block')
+
+  } else if(url === "tab7"){
+    $('.fourth-crumb').css('display','block')
+    var text3 = $('.partn-ac').text();
+    $('.fourth-crumb > a').html(text3)
+  }
 
   $( ".tabs-company > li" ).click(function(event) {
     var attr1 = $(this).data('tab');
     var text1 = $(this).text();
-
+ 
+    window.location.hash = attr1;
     $('.fourth-crumb').css('display','none')
 
     $('.third-crumb > a').html(text1)
