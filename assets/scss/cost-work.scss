@@ -61,9 +61,6 @@ form{
     font-size: 16px;
   }
 }
-.special-block{
-  display: none;
-}
 .top-form{
   margin-bottom: 100px;
   p{
@@ -93,7 +90,7 @@ form{
     }
     input + label{
       position: relative;
-      padding: 5px 20px 15px 30px; 
+      padding: 5px 5px 15px 30px; 
       margin-top: 0px;
     }
     input + label:before{

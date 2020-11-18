@@ -24,8 +24,8 @@ $(document).ready(function(){
     $('.all-c').find('.'+attrPart).addClass('active-part')
   });
 
-  $( ".click-span" ).click(function() {
-    $('..part').removeClass('active-part')
+  $( document ).on('click','.click-span', function() {
+    $('.part').removeClass('active-part')
     $('.one-page').addClass('active-part')
     console.log('win')
   });
@@ -217,11 +217,4 @@ $(document).ready(function(){
     nextArrow: $('.next-sert'),
   });
 
-
-
-  $( ".click-span" ).click(function() {
-    $('.part').removeClass('active-part')
-    $('.one-page').addClass('active-part')
-    console.log('win')
-  });
 });

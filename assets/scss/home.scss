@@ -91,6 +91,7 @@
           }
           span{
             width: 44px;
+            min-width: 44px;
             height: 44px;
           }
         }
@@ -325,6 +326,172 @@
     }
     .pop-up-map{
       display: none;
+    }
+  }
+}
+
+.second-section{
+  margin-bottom: 70px;
+}
+.all-napravlenia{
+  .all-title-nap{
+    display: none;
+  }
+  .title-napr{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 294px;
+    height: 74px;
+    border-radius: 37px;
+    border: 1px solid #231f20;
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 290px;
+    width: 100%;
+    padding: 5px 40px;
+    img{
+      margin-right: 30px;
+    }
+    h5{
+      font-size: 14px;
+      font-weight: 300;
+      span{
+        font-weight: 700;
+      }
+    }
+    &:hover{
+      h5{
+        color: var(--blue-color);
+        span{
+          color: var(--blue-color);
+        }
+      }
+    }
+  }
+  .act-title-napr{
+    box-shadow: inset 0 0 20px rgba(35, 31, 32, 0.2);
+    background-color: var(--blue-color);
+    border-color: var(--blue-color);
+    h5{
+      color: #fff;
+      span{
+        color: #fff;
+      }
+    }
+    &:hover{
+      h5{
+        color: #fff;
+        span{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .one-napr{
+    margin-bottom: 20px;
+    .swiper-slide{
+      max-width: 275px;
+      width: 100%;
+      margin-bottom: 40px;
+      @media (min-width: 425px){
+        margin: 0 auto;
+      }
+      @media (min-width: 570px){
+        margin: 0 2px;
+      }
+      img{
+        max-width: 190px;
+        margin-bottom: 20px;
+      }
+      a{
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: underline;
+        display: inline-block;
+        cursor: pointer;
+        &:hover{
+          color: var(--blue-color);
+        }
+      }
+      p{
+        font-size: 14px;
+        margin: 40px 0 30px;
+      }
+      span{
+        color: #908f91;
+        cursor: pointer;
+        i{
+          margin-left: 6px;
+          font-size: 10px;
+          color: #908f91;
+        }
+        &:hover{
+          color: var(--blue-color);
+          i{
+            color: var(--blue-color);
+          }
+        }
+      }
+    }
+    .slick-dots{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li{
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        margin: 0 6px;
+        button{
+          width: 10px;
+          height: 10px;
+          background: var(--blue-color);
+          border-radius: 50%;
+          border: none;
+        }
+      }
+      .slick-active{
+        button{
+          background: var(--black-text);
+        }
+      }
+    }
+  }
+  .slider-napr{
+    padding: 20px 20px 40px;
+    border: 3px solid #00aedb;
+    background-color: #f5f2f0;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 26px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transform: scale(0);
+    height: 0;
+    display: none;
+    &:before{
+      content: '';
+      left: 0;
+      right: 0;
+      top: -28px;
+      margin: auto;
+      width: 80px;
+      height: 30px;
+      background: url('../img/volna.png') no-repeat 50% 50%;
+      background-size: contain;
+      position: absolute;
+    }
+  }
+  .active-napr{
+    transform: scale(1) translate(0, 0);
+    height: auto;
+    padding: 20px 10px 50px 15px;
+    display: flex;
+    .title-napr{
+      margin-bottom: 15px;
     }
   }
 }
@@ -622,6 +789,7 @@
               }
               span{
                 width: 44px;
+                min-width: 44px;
                 height: 44px;
               }
             }
@@ -664,6 +832,53 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .all-napravlenia{
+    .all-title-nap{
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      border: 1px solid #231f20;
+      border-radius: 37px;
+    }
+    .title-napr{
+      border: none;
+      border-radius: 37px;
+      width: 25%;
+      margin: 0;
+      padding: 10px 20px 10px 40px;
+      margin: -1px;
+
+    }
+    .one-napr{
+      .title-napr{
+        display: none;
+      }
+      .swiper-slide{
+        margin-bottom: 50px;
+      }
+    }
+    .first-napr-slider{
+      &:before{
+        right: 75%;
+      }
+    }
+    .second-napr-slider{
+      &:before{
+        right: 25%;
+      }
+    }
+    .third-napr-slider{
+      &:before{
+        left: 25%;
+      }
+    }
+    .four-napr-slider{
+      &:before{
+        left: 75%;
       }
     }
   }

@@ -244,8 +244,96 @@
   }
 }
 .open-pop-up{
-  z-index: 801;
+  z-index: 810;
   transform: translate(0, -50%);
+}
+
+.pop-search{
+  z-index: -1;
+  transform: translate(0, -100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  padding-top: 20px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.18);
+  .top-c{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    input{
+      width: 100%;
+      max-width: 945px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #231f20;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      color: #908f91;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: var(--font-baeu);
+    }
+    .button-with-arrow{
+      margin-bottom: 20px;
+      button{
+        min-width: 135px;
+      }
+    }
+    .clear-input{
+      margin-bottom: 20px;
+      transform: rotate(45deg);
+      i{
+        color: #908f91;
+        font-size: 26px;
+      }
+      &:hover{
+        i{
+          color: var(--blue-color);
+        }
+      }
+    }
+  }
+  .op-heddin{
+    background: #f5f2f0;
+    padding: 40px 0;
+    margin-top: 30px;
+    display: none;
+    li{
+      margin-bottom: 15px;
+      a{
+        font-family: var(--font-baeu);
+        color: #231f20;
+        font-size: 18px;
+        font-weight: 300;
+        &:hover{
+          color: var(--blue-color);
+          text-decoration: underline;
+        }
+      }
+    }
+    .button-with-arrow{
+      margin-top: 40px;
+      button{
+        height: auto;
+        padding: 17px 15px;
+        border-radius: 26px;
+      }
+      span{
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+      }
+    }
+  }
+}
+.open-pop-search{
+  z-index: 805;
+  transform: translate(0, 0);
 }
 
 @media (min-width: 768px){
@@ -265,8 +353,21 @@
         }
       }
       .button-with-arrow{
-        margin: 0;
-        margin-bottom: 0;
+        // margin: 0;
+        // margin-bottom: 0;
+      }
+    }
+  }
+
+  .pop-search{
+    .top-c{
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      input{
+        margin-right: 115px;
+      }
+      .button-with-arrow{
+        margin-right: 10px;
       }
     }
   }

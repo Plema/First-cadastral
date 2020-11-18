@@ -6,10 +6,29 @@
   }
   .map-with-map{
     margin-bottom: 50px;
+    padding-bottom: 320px;
+    position: relative;
+    .big-map{
+      width: 100%;
+      height: 454px;
+      z-index: 1;
+    }
+    .with-bord{
+      margin: 0 auto;
+      position: absolute;
+      top: 435px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 5;
+      box-shadow: 0 6px 65px rgba(0, 0, 0, 0.18);
+      border: 12px solid #ffffff;
+      width: 295px;
+      border-radius: 6px  0 0 0;
+    }
     .map-marshrut{
-      width: 545px;
-      height: 576px;
-      border: 10px solid #fff;
+      max-width: 271px;
+      height: 311px;
     }
   }
   .two-photo{
@@ -20,6 +39,67 @@
     flex-wrap: wrap;
     img{
       margin: 0 10px 10px;
+    }
+  }
+}
+.bottom-link{
+  position: relative;
+  z-index: 2;
+  a{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    justify-content: flex-start;
+    max-width: 193px;
+    align-items: center;
+    span{
+      color: #908f91;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+    img{
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .our-office{
+    .map-with-map{
+      padding-bottom: 0;
+      .big-map{
+        height: 630px;
+      }
+      .with-bord{
+        left: 45%;
+        top: 51px;
+        width: 445px;
+      }
+      .map-marshrut{
+        width: 421px;
+        max-width: 521px;
+        height: 554px;
+      }
+    }
+  }
+  .bottom-link{
+    text-align: right;
+    a{
+      max-width: 100%;
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: 140px) {
+  .our-office{
+    .map-with-map{
+      .with-bord{
+        width: 545px;
+      }
+      .map-marshrut{
+        width: 521px;
+      }
     }
   }
 }
