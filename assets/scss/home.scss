@@ -32,6 +32,7 @@
         font-size: 20px;
         margin-bottom: 70px;
         max-width: 344px;
+        font-style: italic;
       }
       .two-buttons{
         display: flex;
@@ -395,10 +396,10 @@
       width: 100%;
       margin-bottom: 40px;
       @media (min-width: 425px){
-        margin: 0 auto;
+        margin: 0 auto 15px;
       }
       @media (min-width: 570px){
-        margin: 0 2px;
+        margin: 0 2px 5px;
       }
       img{
         max-width: 190px;
@@ -1016,7 +1017,7 @@
   .our-office{
     .map-with-pop-up{
       .pop-up-map{
-        left: 53%;
+        left: 57%;
       }
     }
   }
