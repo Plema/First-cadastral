@@ -21,6 +21,7 @@ header{
     font-weight: 700;
     font-size: var(--fz18);
     color: var(--black-text);
+    font-style: italic;
   }
 }
 .top-menu{
@@ -437,7 +438,7 @@ nav{
 
 @media (min-width: 1024px) {
   .logotip{
-    max-width: 250px;
+    max-width: 253px;
     margin-right: 70px;
   }
   .top-menu{
