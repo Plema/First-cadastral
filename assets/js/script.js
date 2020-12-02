@@ -58,7 +58,6 @@ $(document).ready(function(){
       $('.arrow-to-top').fadeOut();
     }
   });
-
   
   $( ".close-pop" ).click(function(event) {
     $('.pop-up').removeClass('open-pop-up');
@@ -78,7 +77,16 @@ $(document).ready(function(){
 
   
   $( ".open-politic").click(function(event) {
+    $('.pop-up').removeClass('open-pop-up');
     $('.politic-pop').addClass('open-pop-up');
+    $('.back-dark').addClass('open-back-dark');
+    $('body').css('overflow-y','hidden');
+  });
+
+  $( ".open-pop-mail").click(function(event) {
+    event.preventDefault()
+    $('.pop-up').removeClass('open-pop-up');
+    $('.mail-pop').addClass('open-pop-up');
     $('.back-dark').addClass('open-back-dark');
     $('body').css('overflow-y','hidden');
   });
@@ -103,15 +111,6 @@ $(document).ready(function(){
     $('.back-dark').addClass('open-back-dark');
     $('body').css('overflow-y','hidden');
   });
-
-  
-  $( ".open-thank").click(function(event) {
-    event.preventDefault()
-    $('.pop-up').removeClass('open-pop-up');
-    $('.thank-pop').addClass('open-pop-up');
-    $('.back-dark').addClass('open-back-dark');
-    $('body').css('overflow-y','hidden');
-  });
   
   $( ".open-thank-review").click(function(event) {
     event.preventDefault()
@@ -122,6 +121,13 @@ $(document).ready(function(){
   });
   
 
+  $('.wpcf7-list-item > input ').on('change', function(){
+    if($(this).prop('checked')){
+      $(this).parent().addClass('checked-w3')
+    }else{
+      $(this).parent().removeClass('checked-w3')
+    }
+  });
 
 });
 

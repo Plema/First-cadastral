@@ -44,8 +44,25 @@
     z-index: 4;
     font-weight: 700;
   }
+  input{
+    min-width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #231f20;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 14px;
+    margin-left: -19px;
+    z-index: 4;
+    color: var(--black-text);
+    font-weight: 700;
+  }
   &:hover{
     button{
+      color: var(--blue-color);
+      border-color: var(--blue-color);
+    }
+    input{
       color: var(--blue-color);
       border-color: var(--blue-color);
     }
@@ -65,6 +82,10 @@
     }
   }
   button{
+    margin-left: 0;
+    margin-right: -19px;
+  }
+  input{
     margin-left: 0;
     margin-right: -19px;
   }
